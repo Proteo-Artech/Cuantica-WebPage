@@ -10,9 +10,7 @@ const disciplinas: [string, string][] = [
   ["Flexibilidad", "/disciplinas/flexibilidad"],
   ["Floorwork", "/disciplinas/floorwork"],
   ["Heels Dance", "/disciplinas/heels-dance"],
-  ["Meditación y Atención Plena", "/disciplinas/meditacion-atencion-plena"],
   ["Sonoterapia", "/disciplinas/sonoterapia"],
-  ["Terapia Física y Ocupacional", "/disciplinas/terapia-fisica-ocupacional"],
   ["Yoga", "/disciplinas/yoga"],
 ];
 

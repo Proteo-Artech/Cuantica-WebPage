@@ -29,20 +29,10 @@
     "imageClasses": "[object-position:center_40%]"
   },
   {
-    "name": "Meditación y Atención Plena",
-    "image": "/disciplines/meditacion.webp",
-    "description": "Reduce el estrés con meditaciones guiadas. Descubre la quietud interior."
-  },
-  {
     "name": "Sonoterapia",
     "image": "/disciplines/cuencos-y-gong.webp",
     "description": "Baño de Gong y Cuencos. Experiencia sonora que libera tensiones y relaja.",
     "imageClasses": "[object-position:center_70%]"
-  },
-  {
-    "name": "Terapia Física y Ocupacional",
-    "image": "/disciplines/terapia-fisica.webp",
-    "description": "Rehabilitación y bienestar integral mediante acompañamiento terapéutico personalizado."
   },
   {
     "name": "Yoga",
