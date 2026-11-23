@@ -1,19 +1,8 @@
 [
   {
-    "name": "Chair Dance",
-    "image": "/disciplines/chair-dance.webp",
-    "description": "Coreografías con la silla que integran técnica, sensualidad y expresión escénica."
-  },
-  {
-    "name": "Danzas Polinesias",
-    "image": "/disciplines/ori-tahiti.webp",
-    "description": "Ori Tahiti: danza de la Polinesia Francesa, llena de energía y expresión.",
-    "imageClasses": "[object-position:center_top]"
-  },
-  {
-    "name": "Flexibilidad",
-    "image": "/disciplines/flexibilidad.webp",
-    "description": "Mejora tu movilidad y elasticidad con estiramientos progresivos.",
+    "name": "Heels Dance",
+    "image": "/disciplines/heels-dance.webp",
+    "description": "Danza en tacones que combina técnica, sensualidad y expresión corporal.",
     "imageClasses": "[object-position:center_40%]"
   },
   {
@@ -23,10 +12,27 @@
     "imageClasses": "[object-position:center_50%]"
   },
   {
-    "name": "Heels Dance",
-    "image": "/disciplines/heels-dance.webp",
-    "description": "Danza en tacones que combina técnica, sensualidad y expresión corporal.",
+    "name": "Chair Dance",
+    "image": "/disciplines/chair-dance.webp",
+    "description": "Coreografías con la silla que integran técnica, sensualidad y expresión escénica."
+  },
+  {
+    "name": "Ori Tahiti",
+    "image": "/disciplines/ori-tahiti.webp",
+    "description": "Danza de la Polinesia Francesa, llena de energía y expresión.",
+    "imageClasses": "[object-position:center_top]"
+  },
+  {
+    "name": "Flexibilidad",
+    "image": "/disciplines/flexibilidad.webp",
+    "description": "Mejora tu movilidad y elasticidad con estiramientos progresivos.",
     "imageClasses": "[object-position:center_40%]"
+  },
+  {
+    "name": "Yoga",
+    "image": "/disciplines/yoga.webp",
+    "description": "Equilibrio físico y mental con instructores certificados. Relájate y reconecta.",
+    "imageClasses": "[object-position:center_50%]"
   },
   {
     "name": "Sonoterapia",
@@ -35,9 +41,8 @@
     "imageClasses": "[object-position:center_70%]"
   },
   {
-    "name": "Yoga",
-    "image": "/disciplines/yoga.webp",
-    "description": "Equilibrio físico y mental con instructores certificados. Relájate y reconecta.",
-    "imageClasses": "[object-position:center_50%]"
+    "name": "Terapia Física y Ocupacional para el Adulto Mayor",
+    "image": "/disciplines/terapia-fisica.webp",
+    "description": "Rehabilitación y bienestar integral mediante acompañamiento terapéutico personalizado."
   }
 ]

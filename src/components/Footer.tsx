@@ -5,13 +5,14 @@ import { TbMapPin, TbMail, TbPhone, TbClock } from "react-icons/tb";
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const disciplinas: [string, string][] = [
-  ["Chair Dance", "/disciplinas/chair-dance"],
-  ["Danzas Polinesias", "/disciplinas/danzas-polinesias"],
-  ["Flexibilidad", "/disciplinas/flexibilidad"],
-  ["Floorwork", "/disciplinas/floorwork"],
   ["Heels Dance", "/disciplinas/heels-dance"],
-  ["Sonoterapia", "/disciplinas/sonoterapia"],
+  ["Floorwork", "/disciplinas/floorwork"],
+  ["Chair Dance", "/disciplinas/chair-dance"],
+  ["Ori Tahiti", "/disciplinas/danzas-polinesias"],
+  ["Flexibilidad", "/disciplinas/flexibilidad"],
   ["Yoga", "/disciplinas/yoga"],
+  ["Sonoterapia", "/disciplinas/sonoterapia"],
+  ["Terapia Física y Ocupacional para el Adulto Mayor", "/disciplinas/terapia-fisica-ocupacional"],
 ];
 
 const enlaces: [string, string][] = [
