@@ -6,8 +6,11 @@ export function getDisciplineSlug(name: string): string {
     "Heels Dance": "heels-dance",
     "Danzas Polinesias": "danzas-polinesias",
     "Meditación y Atención Plena": "meditacion-atencion-plena",
-    "Flexibilidad": "flexibilidad"
+    "Flexibilidad": "flexibilidad",
+    "Floorwork": "floorwork",
+    "Chair Dance": "chair-dance",
+    "Sonoterapia": "sonoterapia"
   };
-  
+
   return slugMap[name] || name.toLowerCase().replace(/\s+/g, "-");
 } 
