@@ -62,14 +62,14 @@ export default function Contact() {
                   </span>
                 </h3>
                 <p className="mt-2 text-sm sm:text-base text-[var(--color-black-soft)]/85 font-light leading-relaxed">
-                  Únete a nuestra comunidad. Tu primera clase es{" "}
+                  Únete a nuestra comunidad.{" "}
                   <span
                     className="font-medium italic"
                     style={{ color: "var(--color-pink-vibrant)" }}
                   >
-                    totalmente gratis
-                  </span>
-                  .
+                    Agenda una clase muestra
+                  </span>{" "}
+                  para conocernos.
                 </p>
               </div>
 
@@ -83,7 +83,7 @@ export default function Contact() {
                   }}
                   className="hero-cta inline-flex items-center gap-2.5 px-6 py-3 rounded-full text-sm sm:text-base font-medium focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white whitespace-nowrap"
                 >
-                  Reserva tu primera clase
+                  Agenda tu clase muestra
                   <FaArrowRight className="text-[13px]" aria-hidden />
                 </button>
               </div>
@@ -105,12 +105,12 @@ export default function Contact() {
             </h2>
             <p className="mt-6 text-base sm:text-lg text-[var(--color-black-soft)]/75 leading-relaxed font-light">
               Estamos aquí para acompañarte en tu viaje hacia el bienestar.
-              Contáctanos para más información o para reservar tu primera clase.
+              Contáctanos para más información o para agendar tu clase muestra.
             </p>
           </div>
 
           <div className="mb-12 lg:mb-14">
-            <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="flex items-center justify-center gap-2 mb-3">
               <TbClock
                 className="w-4 h-4"
                 style={{ color: "var(--color-plum)" }}
@@ -119,24 +119,9 @@ export default function Contact() {
                 Horarios
               </span>
             </div>
-            <div className="flex flex-row items-center justify-center gap-3 sm:gap-8 lg:gap-12">
-              <InlineSchedule day="Lun – Vie" hours="6:00 AM – 10:00 PM" />
-              <span
-                aria-hidden
-                className="block w-px h-8 sm:h-6 shrink-0"
-                style={{ background: "rgba(29, 29, 27, 0.15)" }}
-              />
-              <InlineSchedule day="Sábados" hours="7:00 AM – 11:00 AM" />
-              <span
-                aria-hidden
-                className="block w-px h-8 sm:h-6 shrink-0"
-                style={{ background: "rgba(29, 29, 27, 0.15)" }}
-              />
-              <InlineSchedule day="Domingos" hours="7:00 AM – 11:00 AM" />
-            </div>
-            <p className="text-xs text-center italic text-[var(--color-black-soft)]/55 font-light mt-5 max-w-md mx-auto">
-              Horarios sujetos a cambios. Te recomendamos reservar tu clase con
-              anticipación.
+            <p className="text-base sm:text-lg text-center text-[var(--color-black-soft)]/80 font-light max-w-2xl mx-auto leading-relaxed">
+              Horarios sujetos a cambios. Te recomendamos contactarnos para
+              compartirte los horarios.
             </p>
           </div>
 
@@ -346,15 +331,3 @@ export default function Contact() {
   );
 }
 
-function InlineSchedule({ day, hours }: { day: string; hours: string }) {
-  return (
-    <div className="flex flex-col items-center text-center shrink-0">
-      <span className="text-[11px] sm:text-sm font-medium text-[var(--color-black-soft)] tracking-wide whitespace-nowrap">
-        {day}
-      </span>
-      <span className="text-[10px] sm:text-[13px] mt-0.5 sm:mt-1 text-[var(--color-black-soft)]/70 font-light whitespace-nowrap">
-        {hours}
-      </span>
-    </div>
-  );
-}
