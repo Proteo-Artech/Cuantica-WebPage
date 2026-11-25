@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
@@ -140,14 +139,14 @@ export default function Header() {
         `}
         >
           <Link href="/" className="block">
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/logo-vec.svg"
               alt="Cuántica Studio - Yoga y bienestar en Toluca"
-              width={280}
-              height={128}
-              priority
+              width={1182}
+              height={473}
               className="h-32 sm:h-64 md:h-24 lg:h-32 xl:h-32 w-auto transition-transform duration-300 hover:scale-105
-                max-w-[120px] sm:max-w-[160px] md:max-w-[200px] lg:max-w-[240px] xl:max-w-[280px]"
+                max-w-[150px] sm:max-w-[200px] md:max-w-[250px] lg:max-w-[300px] xl:max-w-[340px]"
             />
           </Link>
         </div>
@@ -252,11 +251,12 @@ export default function Header() {
               onClick={() => setIsMenuOpen(false)}
               className="block"
             >
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/logo-vec.svg"
                 alt="Cuántica Studio"
-                width={160}
-                height={82}
+                width={1182}
+                height={473}
                 className="h-14 w-auto"
               />
             </Link>
