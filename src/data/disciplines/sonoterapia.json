@@ -4,70 +4,96 @@
   "slug": "sonoterapia",
   "heroSection": {
     "title": "Sonoterapia",
-    "subtitle": "Baño de Gong y Cuencos",
     "description": "La Sonoterapia es una experiencia inmersiva que utiliza las vibraciones del Gong y los Cuencos tibetanos para liberar tensiones, armonizar tu energía y guiarte a un estado profundo de relajación. En Cuántica Studio creamos un espacio seguro donde el sonido te envuelve y te acompaña en un viaje hacia la calma interior.",
+    "descriptionHighlights": [
+      { "phrase": "viaje hacia la calma interior", "color": "plum" }
+    ],
     "mainImage": "/disciplines/cuencos-y-gong.webp",
     "ctaText": "Reserva tu sesión",
     "ctaLink": "/#contacto"
   },
   "whyCuantica": {
     "title": "¿Por qué vivir una Sonoterapia en Cuántica Studio?",
-    "description": "En Cuántica Studio diseñamos sesiones de Sonoterapia que combinan el poder ancestral del sonido con un ambiente cuidado al detalle. Cada sesión es una invitación a soltar tensiones, reconectar con tu cuerpo y experimentar el bienestar integral a través de las vibraciones del Gong y los Cuencos.",
+    "description": "En Cuántica Studio diseñamos sesiones que combinan el poder ancestral del sonido con un ambiente cuidado al detalle, donde la iluminación, la música y cada elemento del espacio se integran para que el baño sonoro sea una experiencia envolvente.",
+    "secondaryDescription": "Nuestras sesiones no son genéricas: cada baño de Gong y Cuencos se vive dentro de un espacio seguro, acompañado y pensado para tu bienestar integral, para que sueltes tensiones y reconectes con tu cuerpo a tu propio ritmo.",
+    "pullQuote": "Queremos que cada sesión sea una pausa consciente para habitar tu cuerpo, aquietar la mente y volver a ti.",
+    "highlights": [
+      { "phrase": "poder ancestral del sonido", "color": "plum" },
+      { "phrase": "bienestar integral", "color": "pink" }
+    ],
     "image": {
-      "url": "/disciplines/cuencos-y-gong.webp",
-      "alt": "Sesión de Sonoterapia con cuencos y gong en Cuántica Studio"
+      "url": "/disciplines/cuencos-y-gong-2.webp",
+      "alt": "Sesión de Sonoterapia con cuencos y gong en Cuántica Studio",
+      "fit": "cover"
     }
   },
   "benefits": {
-    "title": "Beneficios de la Sonoterapia",
+    "title": "Lo que vas a vivir en cada sesión",
     "items": [
       {
-        "title": "Liberación de Tensiones",
-        "description": "Las vibraciones del sonido ayudan a liberar tensiones físicas y mentales acumuladas.",
-        "icon": "relaxation"
+        "title": "Liberación de tensiones",
+        "description": "Las vibraciones del Gong y los Cuencos ayudan a liberar tensiones físicas y mentales acumuladas en el día a día.",
+        "icon": "experience",
+        "highlights": [
+          { "phrase": "liberar tensiones", "color": "pink" }
+        ]
       },
       {
-        "title": "Armonización Energética",
-        "description": "Equilibra tu energía interior a través de frecuencias que resuenan con tu cuerpo.",
-        "icon": "harmony"
+        "title": "Armonización energética",
+        "description": "Equilibras tu energía interior a través de frecuencias que resuenan con tu cuerpo y favorecen el bienestar.",
+        "icon": "posture",
+        "highlights": [
+          { "phrase": "frecuencias que resuenan con tu cuerpo", "color": "plum" }
+        ]
       },
       {
-        "title": "Relajación Profunda",
-        "description": "Alcanza estados profundos de calma y claridad mental mediante la inmersión sonora.",
-        "icon": "calm"
+        "title": "Relajación profunda",
+        "description": "Alcanzas estados de calma y claridad mental mediante una inmersión sonora que invita a soltar y descansar.",
+        "icon": "confidence",
+        "highlights": [
+          { "phrase": "calma y claridad mental", "color": "pink" }
+        ]
       }
     ]
   },
   "audience": {
     "title": "¿Para quién va dirigida esta sesión?",
-    "description": "La Sonoterapia es para cualquier persona que busque reducir el estrés, liberar tensiones y vivir una experiencia de profunda relajación. No necesitas experiencia previa, solo disposición para dejarte llevar por el sonido.",
+    "description": "La Sonoterapia es para cualquier persona que busque reducir el estrés, liberar tensiones y vivir una experiencia de profunda relajación, sin importar su edad o experiencia previa en prácticas conscientes.",
+    "highlights": [
+      { "phrase": "sin importar su edad o experiencia previa", "color": "plum" }
+    ],
+    "pullQuote": "No necesitas saber meditar ni tener práctica previa: basta con recostarte y dejar que el sonido haga su trabajo.",
     "items": [
       "Si buscas una práctica para reducir el estrés y la ansiedad",
-      "Si quieres experimentar una relajación profunda",
-      "Si deseas explorar el poder sanador del sonido",
+      "Si quieres experimentar una relajación profunda a través del sonido",
+      "Si deseas explorar el poder sanador de las vibraciones",
       "Si necesitas un espacio para pausar y reconectar contigo"
     ]
   },
   "faqs": [
     {
       "question": "¿Qué es un Baño de Gong y Cuencos?",
-      "answer": "Es una experiencia sonora en la que te recuestas y te dejas envolver por las vibraciones del Gong y los Cuencos tibetanos. El sonido actúa como un suave masaje vibracional que relaja cuerpo y mente."
+      "answer": "Es una experiencia sonora en la que te recuestas y te dejas envolver por las vibraciones del Gong y los Cuencos tibetanos. El sonido actúa como un suave masaje vibracional que relaja cuerpo y mente, sin que tengas que hacer nada más que recibirlo."
     },
     {
       "question": "¿Necesito experiencia previa en meditación?",
-      "answer": "No. La Sonoterapia es accesible para cualquier persona, sin importar tu experiencia previa en meditación o prácticas conscientes."
+      "answer": "No. La Sonoterapia es accesible para cualquier persona, sin importar tu experiencia previa en meditación o prácticas conscientes. Solo necesitas disposición para dejarte llevar por el sonido."
     },
     {
       "question": "¿Qué necesito llevar a mi primera sesión?",
-      "answer": "Te recomendamos ropa cómoda, un tapete o mat, una manta ligera y agua para después de la sesión."
+      "answer": "Te recomendamos ropa cómoda que te permita recostarte, un tapete o mat, una manta ligera para abrigarte y agua para hidratarte después de la sesión."
     },
     {
       "question": "¿Cuánto dura una sesión?",
-      "answer": "Las sesiones suelen durar entre 60 y 90 minutos, incluyendo la preparación, el baño sonoro y un tiempo de integración."
+      "answer": "Las sesiones suelen durar entre 60 y 90 minutos, incluyendo la preparación, el baño sonoro y un tiempo de integración para volver poco a poco a tu ritmo habitual."
     },
     {
-      "question": "¿Puedo hacerlo si tengo alguna condición médica?",
-      "answer": "Si estás embarazada, usas marcapasos o tienes alguna condición médica, consulta con tu médico antes de asistir y avísanos al momento de reservar para adaptar la experiencia."
+      "question": "¿Puedo asistir si tengo alguna condición médica?",
+      "answer": "Si estás embarazada, usas marcapasos o tienes alguna condición médica particular, consulta con tu médico antes de asistir y avísanos al momento de reservar para adaptar la experiencia a tus necesidades."
+    },
+    {
+      "question": "¿Cómo puedo reservar?",
+      "answer": "Puedes reservar directamente desde nuestro sistema de reservas en línea. Si necesitas más información, también puedes contactarnos por WhatsApp al 722 670 9287 o por correo a ventas1@cuantica-studio.mx."
     }
   ]
 }
