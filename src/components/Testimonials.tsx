@@ -125,7 +125,7 @@ export default function Testimonials() {
               integral.
             </p>
             <p className="text-lg mb-6 opacity-90 font-bold text-white drop-shadow">
-              Tu primera clase es totalmente gratis.
+              Agenda una clase muestra para conocernos.
             </p>
             <button
               onClick={() => {
@@ -162,7 +162,7 @@ export default function Testimonials() {
                 e.currentTarget.style.color = "#fff";
               }}
             >
-              Reserva tu primera clase
+              Agenda tu clase muestra
             </button>
           </div>
         </div>
