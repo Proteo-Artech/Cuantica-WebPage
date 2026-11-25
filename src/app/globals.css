@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -8,11 +9,17 @@
   --color-pink-vibrant: #ee217f;
   --color-pink-pastel: #ffc0d0;
   --color-beige-rose: #edded4;
-  --color-beige-pure: #f9f6ef;  
+  --color-beige-pure: #f9f6ef;
   --color-lavender: #b39ddb;
   --color-lavender-light: #d1c4e9;
   --color-lavender-dark: #6c3483;
   --color-sand-dark: #ebe0d5cb;
+  --color-plum: #a8307f;
+
+  /* Motion tokens — custom easing curves (Emil Kowalski) */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 /* Scrollbar personalizado */
@@ -179,7 +186,19 @@ body {
 
 /* Utility classes */
 .animate-fade-in {
-  animation: fadeIn 0.5s ease-in-out;
+  opacity: 0;
+  animation: fadeIn 500ms var(--ease-out) forwards;
+}
+
+/* Reduced motion: keep opacity fade, drop translateY */
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in {
+    animation-duration: 200ms;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: none; }
+    to { opacity: 1; transform: none; }
+  }
 }
 
 .animate-slide-in-left {
@@ -212,6 +231,539 @@ body {
 
 .animate-wiggle {
   animation: wiggle 1s ease-in-out;
+}
+
+/* Header nav — Contact as primary pill CTA */
+.nav-contact-pill {
+  background: var(--color-pink-vibrant);
+  color: #fff;
+  box-shadow: 0 6px 18px -8px rgba(238, 33, 127, 0.5);
+  transition:
+    transform 160ms var(--ease-out),
+    background-color 200ms var(--ease-out),
+    box-shadow 200ms var(--ease-out),
+    color 200ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav-contact-pill:hover {
+    background: var(--color-pink-pastel);
+    color: var(--color-black-soft);
+    box-shadow: 0 8px 22px -8px rgba(255, 192, 208, 0.55);
+  }
+}
+
+.nav-contact-pill:active {
+  transform: scale(0.97);
+}
+
+/* Contact pill — active state */
+.nav-contact-pill-active {
+  box-shadow:
+    0 0 0 2px var(--color-pink-pastel),
+    0 8px 22px -8px rgba(238, 33, 127, 0.6);
+}
+
+/* Hero — display typography */
+.hero-title,
+.hero-subtitle {
+  font-family: "Playfair Display", Georgia, serif;
+  font-feature-settings: "liga", "kern";
+  /* Subtle depth over video — not a hard drop shadow */
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.6);
+}
+
+.hero-supporting {
+  font-family: "Inter", system-ui, sans-serif;
+  letter-spacing: 0.005em;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55);
+}
+
+/* Hero — primary CTA */
+.hero-cta {
+  background: var(--color-pink-vibrant);
+  color: #fff;
+  border: none;
+  box-shadow: 0 8px 24px -8px rgba(238, 33, 127, 0.5);
+  transition:
+    transform 160ms var(--ease-out),
+    background-color 200ms var(--ease-out),
+    box-shadow 200ms var(--ease-out),
+    color 200ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .hero-cta:hover {
+    background: var(--color-pink-pastel);
+    color: var(--color-black-soft);
+    box-shadow: 0 10px 28px -8px rgba(255, 192, 208, 0.5);
+  }
+}
+
+.hero-cta:active {
+  transform: scale(0.97);
+}
+
+/* Welcome Screen */
+.welcome-screen {
+  background: #f5ede1;
+}
+
+.welcome-title,
+.welcome-subtitle,
+.welcome-tagline {
+  font-family: "Playfair Display", Georgia, serif;
+  font-feature-settings: "liga", "kern";
+  color: var(--color-black-soft);
+}
+
+.welcome-subtitle {
+  color: var(--color-black-soft);
+  font-style: italic;
+  letter-spacing: -0.01em;
+}
+
+.welcome-tagline {
+  color: var(--color-plum);
+  letter-spacing: 0.005em;
+}
+
+.welcome-indicator {
+  color: var(--color-black-soft);
+  opacity: 0.6;
+}
+
+.welcome-arrow {
+  display: block;
+  width: 1px;
+  height: 28px;
+  background: linear-gradient(
+    to bottom,
+    var(--color-pink-vibrant) 0%,
+    transparent 100%
+  );
+  animation: welcomeArrowPulse 1.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes welcomeArrowPulse {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(4px);
+    opacity: 1;
+  }
+}
+
+.welcome-hide {
+  opacity: 0 !important;
+  transform: translateY(-20px);
+  transition: opacity 600ms var(--ease-out), transform 600ms var(--ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .welcome-arrow {
+    animation: none;
+  }
+}
+
+/* Disciplines — section typography */
+.disciplines-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-feature-settings: "liga", "kern";
+}
+
+/* About — section typography */
+.about-title,
+.about-pillar-title,
+.about-stat,
+.about-lead {
+  font-family: "Playfair Display", Georgia, serif;
+  font-feature-settings: "liga", "kern";
+}
+
+/* Contact — form field styles */
+.contact-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-black-soft);
+  margin-bottom: 0.375rem;
+  letter-spacing: 0.01em;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  background: rgba(255, 253, 249, 0.75);
+  border: 1.5px solid rgba(238, 33, 127, 0.18);
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--color-black-soft);
+  transition:
+    border-color 200ms var(--ease-out),
+    background-color 200ms var(--ease-out),
+    box-shadow 200ms var(--ease-out);
+}
+
+.contact-input::placeholder {
+  color: rgba(29, 29, 27, 0.4);
+}
+
+.contact-input:focus {
+  outline: none;
+  border-color: var(--color-pink-vibrant);
+  background: rgba(255, 253, 249, 0.95);
+  box-shadow: 0 0 0 3px rgba(238, 33, 127, 0.15);
+}
+
+/* Contact — chip (disciplina checkbox) */
+.contact-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 42px;
+  text-align: center;
+  padding: 0.4rem 0.625rem;
+  border-radius: 14px;
+  background: rgba(255, 253, 249, 0.6);
+  border: 1.5px solid rgba(238, 33, 127, 0.22);
+  color: var(--color-black-soft);
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 500;
+  word-break: break-word;
+  hyphens: auto;
+  transition:
+    background-color 200ms var(--ease-out),
+    border-color 200ms var(--ease-out),
+    color 200ms var(--ease-out),
+    transform 160ms var(--ease-out);
+  user-select: none;
+}
+
+@media (min-width: 640px) {
+  .contact-chip {
+    font-size: 13px;
+    padding: 0.5rem 0.75rem;
+    min-height: 44px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .contact-chip:hover {
+    background: rgba(255, 192, 208, 0.4);
+    border-color: var(--color-pink-vibrant);
+  }
+}
+
+.peer:checked ~ .contact-chip {
+  background: var(--color-pink-vibrant);
+  color: #fff;
+  border-color: var(--color-pink-vibrant);
+}
+
+.contact-chip:active {
+  transform: scale(0.97);
+}
+
+/* Contact — anchor hover */
+.contact-link {
+  color: var(--color-black-soft);
+  opacity: 0.85;
+  transition: color 200ms var(--ease-out), opacity 200ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .contact-link:hover {
+    color: var(--color-pink-vibrant);
+    opacity: 1;
+  }
+}
+
+/* Footer — typography + elements */
+.footer-lead {
+  font-family: "Playfair Display", Georgia, serif;
+  font-feature-settings: "liga", "kern";
+}
+
+.footer-heading {
+  font-family: "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: -0.005em;
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+  font-weight: 300;
+  transition: color 200ms var(--ease-out);
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footer-link:hover {
+    color: var(--color-pink-vibrant);
+  }
+}
+
+/* Footer — social icon */
+.footer-social {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1.5px solid rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.95);
+  transition:
+    background-color 200ms var(--ease-out),
+    border-color 200ms var(--ease-out),
+    color 200ms var(--ease-out),
+    box-shadow 240ms var(--ease-out),
+    transform 160ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .footer-social:hover {
+    background: rgba(238, 33, 127, 0.08);
+    border-color: var(--color-pink-vibrant);
+    color: var(--color-pink-vibrant);
+    box-shadow:
+      0 0 0 1px rgba(238, 33, 127, 0.45),
+      0 0 24px -2px rgba(238, 33, 127, 0.55);
+    transform: translateY(-2px);
+  }
+}
+
+.footer-social:active {
+  transform: scale(0.95);
+}
+
+/* About — shared card */
+.about-card {
+  background: rgba(254, 250, 244, 0.95);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border: 2px solid rgba(238, 33, 127, 0.28);
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 6px 24px -14px rgba(168, 48, 127, 0.12);
+  transition:
+    transform 300ms var(--ease-out),
+    border-color 300ms var(--ease-out),
+    box-shadow 300ms var(--ease-out);
+}
+
+@media (min-width: 640px) {
+  .about-card {
+    padding: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-card {
+    padding: 2.25rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .about-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(238, 33, 127, 0.45);
+    box-shadow:
+      0 0 0 1px rgba(238, 33, 127, 0.45),
+      0 18px 36px -14px rgba(238, 33, 127, 0.28),
+      0 0 32px -16px rgba(238, 33, 127, 0.22);
+  }
+}
+
+/* Disciplines — header action pill */
+.disciplines-contact {
+  background: var(--color-pink-vibrant);
+  color: #fff;
+  box-shadow: 0 8px 22px -8px rgba(238, 33, 127, 0.55);
+  transition:
+    transform 160ms var(--ease-out),
+    background-color 200ms var(--ease-out),
+    box-shadow 200ms var(--ease-out),
+    color 200ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .disciplines-contact:hover {
+    background: var(--color-pink-pastel);
+    color: var(--color-black-soft);
+    box-shadow: 0 10px 26px -8px rgba(255, 192, 208, 0.6);
+  }
+}
+
+.disciplines-contact:active {
+  transform: scale(0.97);
+}
+
+.disciplines-contact-arrow {
+  transition: transform 200ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .disciplines-contact:hover .disciplines-contact-arrow {
+    transform: translateX(4px);
+  }
+}
+
+/* Disciplines — grid card */
+.discipline-grid-card {
+  transition:
+    transform 400ms var(--ease-out),
+    box-shadow 400ms var(--ease-out);
+}
+
+.discipline-grid-image {
+  filter: brightness(1.06) saturate(1.02);
+  transition: transform 700ms var(--ease-out);
+}
+
+/* Disciplines — pink wash on hover */
+.discipline-grid-wash {
+  background: linear-gradient(
+    180deg,
+    rgba(238, 33, 127, 0.0) 0%,
+    rgba(238, 33, 127, 0.08) 55%,
+    rgba(238, 33, 127, 0.22) 100%
+  );
+  opacity: 0;
+  transition: opacity 400ms var(--ease-out);
+  mix-blend-mode: multiply;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .discipline-grid-card:hover {
+    transform: translateY(-4px);
+    box-shadow:
+      0 0 0 1px rgba(238, 33, 127, 0.45),
+      0 18px 36px -14px rgba(238, 33, 127, 0.28),
+      0 0 32px -16px rgba(238, 33, 127, 0.22);
+  }
+
+  .discipline-grid-card:hover .discipline-grid-image {
+    transform: scale(1.05);
+  }
+
+  .discipline-grid-card:hover .discipline-grid-wash {
+    opacity: 1;
+  }
+
+  .discipline-grid-card:hover .discipline-grid-arrow {
+    transform: translateX(4px);
+  }
+
+  .discipline-grid-card:hover .discipline-number {
+    color: #fff;
+    text-shadow: 0 2px 16px rgba(255, 255, 255, 0.25);
+  }
+}
+
+.discipline-grid-card:active {
+  transform: translateY(-3px) scale(0.99);
+}
+
+.discipline-number {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
+  transition:
+    color 200ms var(--ease-out),
+    text-shadow 200ms var(--ease-out);
+}
+
+.discipline-grid-name {
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.discipline-grid-arrow {
+  transition: transform 200ms var(--ease-out);
+}
+
+/* Disciplines — CTA pill */
+.discipline-grid-cta {
+  background: rgba(255, 255, 255, 0.08);
+  transition:
+    background-color 200ms var(--ease-out),
+    color 200ms var(--ease-out),
+    transform 160ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .discipline-grid-card:hover .discipline-grid-cta {
+    background: rgba(255, 255, 255, 0.14);
+  }
+
+  /* Specific CTA hover — fills with brand pink */
+  .discipline-grid-cta:hover {
+    background: var(--color-pink-vibrant);
+    color: #fff;
+    transform: scale(1.03);
+  }
+}
+
+.discipline-grid-cta:active {
+  transform: scale(0.97);
+}
+
+/* Hero — scroll indicator */
+.hero-scroll {
+  transition: color 200ms var(--ease-out);
+}
+
+.hero-scroll-line {
+  display: block;
+  width: 1px;
+  height: 56px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    currentColor 40%,
+    currentColor 100%
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-scroll-line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(255, 255, 255, 0.9) 50%,
+    transparent 100%
+  );
+  animation: scrollLineTrail 2.2s var(--ease-in-out) infinite;
+}
+
+@keyframes scrollLineTrail {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-scroll-line::after {
+    animation: none;
+  }
 }
 
 /* Responsive utilities */
