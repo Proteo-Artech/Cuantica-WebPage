@@ -5,14 +5,36 @@ import OptimizedImage from "./OptimizedImage";
 import localDisciplinesJson from "./disciplines22.json";
 import { getDisciplineSlug } from "@/utils/disciplineUtils";
 
+type Category = "danza" | "wellness";
+
 interface LocalDiscipline {
   id: number;
   name: string;
   description: string;
   image: string;
   slug: string;
+  category: Category;
   imageClasses?: string;
 }
+
+interface PhaseMeta {
+  key: Category;
+  label: string;
+  tagline: string;
+}
+
+const PHASES: PhaseMeta[] = [
+  {
+    key: "danza",
+    label: "Danza",
+    tagline: "Movimiento y expresión",
+  },
+  {
+    key: "wellness",
+    label: "Wellness",
+    tagline: "Equilibrio y bienestar",
+  },
+];
 
 export default function DisciplineCarousel() {
   const disciplines = useMemo<LocalDiscipline[]>(() => {
@@ -21,6 +43,7 @@ export default function DisciplineCarousel() {
         name: string;
         image: string;
         description: string;
+        category: Category;
         imageClasses?: string;
       }>
     ).map((d, idx) => ({
@@ -28,10 +51,20 @@ export default function DisciplineCarousel() {
       name: d.name,
       image: d.image,
       description: d.description,
+      category: d.category,
       slug: getDisciplineSlug(d.name),
       imageClasses: d.imageClasses,
     }));
   }, []);
+
+  const byPhase = useMemo(() => {
+    const grouped: Record<Category, LocalDiscipline[]> = {
+      danza: [],
+      wellness: [],
+    };
+    for (const d of disciplines) grouped[d.category].push(d);
+    return grouped;
+  }, [disciplines]);
 
   const scrollToContact = useCallback(() => {
     const element = document.getElementById("contacto");
@@ -57,7 +90,7 @@ export default function DisciplineCarousel() {
       />
 
       <div className="relative z-10 w-full max-w-[1500px] mx-auto">
-        <div className="mb-14 lg:mb-20 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+        <div className="mb-20 lg:mb-28 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
           <div className="max-w-2xl">
             <h2 className="disciplines-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-[0.01em] text-white leading-[0.95] uppercase">
               Nuestras
@@ -66,8 +99,15 @@ export default function DisciplineCarousel() {
               </span>
             </h2>
             <p className="mt-6 text-base sm:text-lg text-white/70 leading-relaxed max-w-xl font-light">
-              Explora el camino hacia tu transformación integral. Expande tus
-              posibilidades. Da el salto.
+              Dos caminos que convergen hacia tu transformación: la{" "}
+              <span className="italic" style={{ color: "var(--color-pink-pastel)" }}>
+                danza
+              </span>{" "}
+              como expresión y el{" "}
+              <span className="italic" style={{ color: "var(--color-pink-pastel)" }}>
+                wellness
+              </span>{" "}
+              como equilibrio.
             </p>
           </div>
 
@@ -92,66 +132,109 @@ export default function DisciplineCarousel() {
           </button>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6">
-          {disciplines.map((discipline, index) => (
-            <Link
-              key={discipline.id}
-              href={`/disciplinas/${discipline.slug}`}
-              className="discipline-grid-card group relative block rounded-2xl overflow-hidden aspect-[4/5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-pink-vibrant)]"
-              aria-label={`Ver ${discipline.name}`}
+        {PHASES.map((phase, phaseIdx) => {
+          const items = byPhase[phase.key];
+          if (!items.length) return null;
+          const isWellness = phase.key === "wellness";
+          return (
+            <div
+              key={phase.key}
+              className={phaseIdx > 0 ? "mt-14 lg:mt-20" : ""}
             >
-              <div className="absolute inset-0 w-full h-full">
-                <OptimizedImage
-                  src={discipline.image}
-                  alt={discipline.name}
-                  priority={index < 3}
-                  loading={index < 3 ? "eager" : "lazy"}
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  className={`w-full h-full discipline-grid-image ${
-                    discipline.imageClasses?.includes("object-contain")
-                      ? ""
-                      : "object-cover"
-                  } ${discipline.imageClasses || ""}`}
-                />
-              </div>
-
-              <div
-                aria-hidden
-                className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent"
-              />
-
-              <div
-                aria-hidden
-                className="discipline-grid-wash absolute inset-0 pointer-events-none"
-              />
-
-              <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-5 lg:p-6 z-10">
-                <h3 className="discipline-grid-name text-white text-base sm:text-xl lg:text-[26px] font-semibold leading-tight mb-2 sm:mb-3">
-                  {discipline.name}
+              <div className="mb-10 lg:mb-14 flex items-end gap-4 sm:gap-5 lg:gap-7">
+                <h3
+                  className="italic font-normal tracking-[-0.015em] leading-none text-[34px] sm:text-[44px] lg:text-[58px]"
+                  style={{
+                    color: "var(--color-pink-pastel)",
+                    fontFamily: '"Playfair Display", Georgia, serif',
+                  }}
+                >
+                  {phase.label}
                 </h3>
-                <p className="discipline-grid-desc hidden sm:block text-sm lg:text-base text-white/85 leading-relaxed font-light mb-5">
-                  {discipline.description}
-                </p>
-                <span className="discipline-grid-cta inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-sm font-medium text-white">
-                  Ver disciplina
-                  <svg
-                    className="w-3 h-3 sm:w-4 sm:h-4 discipline-grid-arrow"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
+                <span
+                  aria-hidden
+                  className="shrink-0 w-2 h-2 rounded-full mb-4"
+                  style={{ background: "var(--color-pink-vibrant)" }}
+                />
+                <span
+                  aria-hidden
+                  className="flex-1 h-px mb-3"
+                  style={{ background: "rgba(255,255,255,0.22)" }}
+                />
+                <span className="text-[11px] sm:text-[12px] lg:text-[13px] tracking-[0.3em] uppercase text-white font-bold whitespace-nowrap mb-1 hidden sm:inline-block">
+                  {phase.tagline}
                 </span>
               </div>
-            </Link>
-          ))}
-        </div>
+
+              <div
+                className={
+                  isWellness
+                    ? "grid grid-cols-2 gap-3 sm:gap-4 lg:gap-6 max-w-4xl"
+                    : "grid grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 lg:gap-6"
+                }
+              >
+                {items.map((discipline, index) => (
+                  <Link
+                    key={discipline.id}
+                    href={`/disciplinas/${discipline.slug}`}
+                    className="discipline-grid-card group relative block rounded-2xl overflow-hidden aspect-[4/5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-pink-vibrant)]"
+                    aria-label={`Ver ${discipline.name}`}
+                  >
+                    <div className="absolute inset-0 w-full h-full">
+                      <OptimizedImage
+                        src={discipline.image}
+                        alt={discipline.name}
+                        priority={phaseIdx === 0 && index < 3}
+                        loading={phaseIdx === 0 && index < 3 ? "eager" : "lazy"}
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        className={`w-full h-full discipline-grid-image ${
+                          discipline.imageClasses?.includes("object-contain")
+                            ? ""
+                            : "object-cover"
+                        } ${discipline.imageClasses || ""}`}
+                      />
+                    </div>
+
+                    <div
+                      aria-hidden
+                      className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent"
+                    />
+
+                    <div
+                      aria-hidden
+                      className="discipline-grid-wash absolute inset-0 pointer-events-none"
+                    />
+
+                    <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-5 lg:p-6 z-10">
+                      <h4 className="discipline-grid-name text-white text-base sm:text-xl lg:text-[26px] font-semibold leading-tight mb-2 sm:mb-3">
+                        {discipline.name}
+                      </h4>
+                      <p className="discipline-grid-desc hidden sm:block text-sm lg:text-base text-white/85 leading-relaxed font-light mb-5">
+                        {discipline.description}
+                      </p>
+                      <span className="discipline-grid-cta inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-[11px] sm:text-sm font-medium text-white">
+                        Ver disciplina
+                        <svg
+                          className="w-3 h-3 sm:w-4 sm:h-4 discipline-grid-arrow"
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M17 8l4 4m0 0l-4 4m4-4H3"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
