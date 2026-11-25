@@ -1,73 +1,101 @@
 {
   "id": "danzas-polinesias",
-  "name": "Danzas Polinesias",
+  "name": "Ori Tahiti",
   "slug": "danzas-polinesias",
   "heroSection": {
-    "title": "Danzas Polinesias",
-    "subtitle": "Conecta con la alegría del movimiento",
-    "description": "Las danzas polinesias (como el hula y el tahitiano) combinan movimientos de cadera, brazos y expresión facial para contar una historia con el cuerpo. Es una práctica alegre y de bajo impacto que trabaja coordinación, ritmo y conexión con tu cuerpo, mientras te acerca a una tradición cultural llena de energía. Toma tus clases de danzas polinesias en Toluca con nosotros.",
-    "mainImage": "/disciplines/danza-polinesia.webp",
-    "ctaText": "¡Descúbrelo ahora!",
+    "title": "Ori Tahiti",
+    "description": "Es una danza originaria de Tahití, en la Polinesia Francesa, que se caracteriza por sus movimientos rítmicos de cadera, el trabajo de piernas, la coordinación de brazos y la conexión con la música. Es una danza llena de energía, identidad y expresión. En Cuántica Studio creemos que la danza tiene muchas formas de expresarse. Por eso, abrimos espacio a experiencias como Ori Tahiti, que te invitan a descubrir nuevas posibilidades de movimiento, explorar tu expresión corporal y acercarte a otras culturas a través de la danza.",
+    "descriptionHighlights": [
+      { "phrase": "danza llena de energía, identidad y expresión", "color": "plum" }
+    ],
+    "mainImage": "/disciplines/ori-tahiti-3.webp",
+    "heroImageAspect": "aspect-[4/3] sm:aspect-[16/10]",
+    "ctaText": "Reserva tu clase",
     "ctaLink": "/#contacto"
   },
   "whyCuantica": {
-    "title": "¿Por qué tomar Danzas Polinesias en Cuántica Studio?",
-    "description": "En Cuántica Studio aprendes danzas polinesias con respeto por su origen cultural, en clases guiadas paso a paso para que domines la técnica de cadera, brazos y expresión sin sentirte perdida entre coreografías rápidas. Es un espacio pensado para disfrutar el proceso, no solo el resultado, dentro de una comunidad que baila junta y se acompaña en cada avance.",
+    "title": "¿Por qué practicar Ori Tahiti en Cuántica Studio?",
+    "description": "En Cuántica Studio llevamos el Ori Tahiti más allá de lo convencional, cada clase es el comienzo de algo extraordinario: Nuestro salón está diseñado para sumergirte en un ambiente donde la iluminación, la música y cada detalle del espacio se integran para hacer de la danza una experiencia envolvente.",
+    "secondaryDescription": "Además, podrás formar parte de clases temáticas, sesiones exclusivas y proyectos creativos que van más allá del salón, como producciones audiovisuales profesionales y grabaciones tanto dentro del estudio como en locaciones especiales.",
+    "pullQuote": "Creamos espacios y momentos para que explores tu movimiento, celebres tus avances y seas protagonista de tu propia historia.",
+    "highlights": [
+      { "phrase": "más allá de lo convencional", "color": "plum" },
+      { "phrase": "protagonista de tu propia historia", "color": "pink" }
+    ],
     "image": {
-      "url": "/disciplines/danza-polinesia.webp",
-      "alt": "Clase de Danzas Polinesias en Cuántica Studio"
+      "url": "/disciplines/ori-tahiti-2.webp",
+      "alt": "Clase de Ori Tahiti en Cuántica Studio",
+      "fit": "cover"
     }
   },
   "benefits": {
-    "title": "Resultados que notarás con Danzas Polinesias",
+    "title": "Lo que vas a vivir en cada clase",
     "items": [
       {
-        "title": "Cultura y Tradición",
-        "description": "Sumérgete en una experiencia cultural auténtica, aprendiendo el significado detrás de cada movimiento.",
-        "icon": "culture"
+        "title": "Coordinación y ritmo",
+        "description": "Trabajarás los movimientos rítmicos de cadera, la coordinación de brazos y la conexión con la música para ejecutar las secuencias con mayor control.",
+        "icon": "technique",
+        "highlights": [
+          { "phrase": "movimientos rítmicos de cadera", "color": "pink" }
+        ]
       },
       {
-        "title": "Alegría y Vitalidad",
-        "description": "Activa tu energía y libera estrés con música y movimiento, saliendo de cada clase con mejor ánimo.",
-        "icon": "joy"
+        "title": "Fuerza y resistencia",
+        "description": "Desarrollarás resistencia cardiovascular, fortalecerás piernas y abdomen mientras disfrutas de una actividad llena de energía.",
+        "icon": "posture",
+        "highlights": [
+          { "phrase": "resistencia cardiovascular", "color": "plum" }
+        ]
       },
       {
-        "title": "Coordinación y Ritmo",
-        "description": "Desarrolla coordinación, control corporal y sentido del ritmo mientras disfrutas del baile en grupo.",
-        "icon": "rhythm"
+        "title": "Expresión y cultura",
+        "description": "Estimularás tu expresión corporal y te acercarás a la cultura polinesia a través de una danza llena de identidad.",
+        "icon": "experience",
+        "highlights": [
+          { "phrase": "cultura polinesia", "color": "pink" }
+        ]
       }
     ]
   },
   "audience": {
-    "title": "¿Para quién son las Danzas Polinesias en Cuántica Studio?",
-    "description": "Las clases de danzas polinesias en Toluca son para cualquier persona que quiera moverse con alegría, sin importar su experiencia previa en baile.",
+    "title": "¿Para quién va dirigida esta clase?",
+    "description": "¡Esta clase es para ti si tienes curiosidad por aprender a bailar danzas polinesias, descubrir nuevas formas de movimiento y explorar una faceta diferente de ti a través de la danza! No necesitas experiencia previa, solo ganas de aprender y disfrutar el proceso a tu propio ritmo.",
+    "highlights": [
+      { "phrase": "una faceta diferente de ti", "color": "plum" },
+      { "phrase": "a tu propio ritmo", "color": "pink" }
+    ],
+    "pullQuote": "No necesitas experiencia previa, solo ganas de aprender y disfrutar el proceso a tu propio ritmo.",
     "items": [
-      "Si te interesa una práctica cultural auténtica y quieres aprender su significado",
-      "Si buscas una actividad divertida de bajo impacto para liberar estrés",
-      "Si quieres mejorar tu coordinación, ritmo y control corporal",
-      "Si prefieres aprender en grupo, a tu ritmo y sin presión"
+      "Si tienes curiosidad por aprender a bailar danzas polinesias",
+      "Si buscas descubrir nuevas formas de movimiento",
+      "Si quieres explorar una faceta diferente de ti a través de la danza",
+      "Si prefieres aprender sin experiencia previa, a tu propio ritmo"
     ]
   },
   "faqs": [
     {
-      "question": "¿Necesito experiencia previa en danza?",
-      "answer": "No, las clases están diseñadas para principiantes y se avanza de forma progresiva en técnica de cadera, brazos y coreografía."
+      "question": "¿Puedo aprender Ori Tahiti si nunca he bailado?",
+      "answer": "¡Claro! No necesitas experiencia previa para comenzar. En Cuántica Studio podrás familiarizarte con esta danza de manera progresiva, construyendo las habilidades necesarias para disfrutar de las coreografías a tu propio ritmo."
     },
     {
-      "question": "¿Qué debo llevar a clase?",
-      "answer": "Ropa cómoda que te permita mover libremente la cadera, calcetines o zapatos ligeros y agua para hidratarte durante la sesión."
+      "question": "¿Qué puedo esperar al practicar Ori Tahiti?",
+      "answer": "Desarrollarás resistencia cardiovascular, fortalecerás piernas y abdomen, mejorarás tu coordinación y trabajarás la movilidad de tu cadera. Además, es una oportunidad para liberar tensiones, estimular tu expresión corporal y disfrutar de una actividad que conecta el ejercicio con la cultura polinesia."
     },
     {
-      "question": "¿Es una actividad de alto impacto?",
-      "answer": "No, es una práctica de bajo impacto en articulaciones, apta para distintas edades y niveles de condición física."
+      "question": "¿Qué necesito llevar a mi primera clase?",
+      "answer": "Te recomendamos ropa cómoda y ligera que te permita mover libremente, pareo y agua para mantenerte hidratada."
     },
     {
-      "question": "¿Qué edad se recomienda para tomar la clase?",
-      "answer": "La clase está abierta a jóvenes y adultos; si tienes dudas sobre si es adecuada para tu edad o condición física, contáctanos antes de inscribirte."
+      "question": "¿Es difícil aprender los movimientos de cadera?",
+      "answer": "Al principio puede requerir práctica y coordinación, pero poco a poco desarrollarás el control y la técnica necesarios para ejecutar los movimientos. Nuestros maestros te acompañarán en el proceso para que ganes confianza y disfrutes cada avance."
     },
     {
-      "question": "¿Dónde se imparten las clases de danzas polinesias?",
-      "answer": "Nuestro estudio está en Toluca y recibimos alumnos de Metepec, Zinacantepec y Lerma."
+      "question": "¿Qué pasa si no logro seguir el ritmo de la clase?",
+      "answer": "No te preocupes, los movimientos se enseñan de manera progresiva para que puedas familiarizarte con la música, comprender las secuencias y ganar confianza poco a poco. No necesitas aprenderlo todo desde el primer día."
+    },
+    {
+      "question": "¿Cómo puedo reservar?",
+      "answer": "Puedes reservar directamente desde nuestro sistema de reservas en línea. Si necesitas más información, también puedes contactarnos por WhatsApp al 722 670 9287 o por correo a ventas1@cuantica-studio.mx."
     }
   ]
 }
