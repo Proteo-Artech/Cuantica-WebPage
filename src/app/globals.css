@@ -694,6 +694,39 @@ body {
   }
 }
 
+/* Secondary CTA — "Ver todas las disciplinas" outline button with plum fill on hover */
+.ver-disciplinas-cta {
+  background: transparent;
+  border-color: rgba(168, 48, 127, 0.35);
+  color: var(--color-plum);
+  outline-color: var(--color-plum);
+  transition:
+    background-color 220ms var(--ease-out),
+    color 220ms var(--ease-out),
+    border-color 220ms var(--ease-out),
+    box-shadow 220ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ver-disciplinas-cta:hover {
+    background: var(--color-plum);
+    border-color: var(--color-plum);
+    color: #ffffff;
+    box-shadow: 0 14px 30px -14px rgba(168, 48, 127, 0.55);
+  }
+}
+
+.ver-disciplinas-cta:active {
+  background: var(--color-lavender-dark);
+  border-color: var(--color-lavender-dark);
+  color: #ffffff;
+  transform: translateY(1px);
+}
+
+.ver-disciplinas-cta:focus-visible {
+  box-shadow: 0 0 0 3px rgba(168, 48, 127, 0.28);
+}
+
 .discipline-number {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;

@@ -15,6 +15,8 @@ interface WhyCuanticaSectionProps {
   image: {
     url: string;
     alt: string;
+    fit?: "cover" | "contain";
+    objectPosition?: string;
   };
 }
 
@@ -123,7 +125,16 @@ export default function WhyCuanticaSection({
                   alt={image.alt}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-contain object-center"
+                  className={
+                    image.fit === "cover"
+                      ? "object-cover"
+                      : "object-contain object-center"
+                  }
+                  style={
+                    image.objectPosition
+                      ? { objectPosition: image.objectPosition }
+                      : undefined
+                  }
                 />
               </div>
 
