@@ -676,6 +676,24 @@ body {
   transform: translateY(-3px) scale(0.99);
 }
 
+/* Info cards — pink glow illumination on hover (Benefits, Audience, FAQ closed) */
+.info-card-lit {
+  transition:
+    transform 300ms var(--ease-out),
+    box-shadow 300ms var(--ease-out),
+    border-color 300ms var(--ease-out);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .info-card-lit:hover {
+    transform: translateY(-3px);
+    border-color: rgba(238, 33, 127, 0.55) !important;
+    box-shadow:
+      0 20px 44px -20px rgba(238, 33, 127, 0.35),
+      0 0 0 1px rgba(238, 33, 127, 0.18) !important;
+  }
+}
+
 .discipline-number {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
