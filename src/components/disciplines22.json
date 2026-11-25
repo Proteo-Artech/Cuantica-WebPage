@@ -1,43 +1,57 @@
 [
   {
-    "name": "Chair Dance",
-    "image": "/disciplines/chair-dance.webp",
-    "description": "Coreografías con la silla que integran técnica, sensualidad y expresión escénica."
-  },
-  {
-    "name": "Danzas Polinesias",
-    "image": "/disciplines/ori-tahiti.webp",
-    "description": "Ori Tahiti: danza de la Polinesia Francesa, llena de energía y expresión.",
-    "imageClasses": "[object-position:center_top]"
-  },
-  {
-    "name": "Flexibilidad",
-    "image": "/disciplines/flexibilidad.webp",
-    "description": "Mejora tu movilidad y elasticidad con estiramientos progresivos.",
+    "name": "Heels Dance",
+    "category": "danza",
+    "image": "/disciplines/Heels-Dance.webp",
+    "description": "Danza en tacones que combina técnica, sensualidad y expresión corporal.",
     "imageClasses": "[object-position:center_40%]"
   },
   {
     "name": "Floorwork",
+    "category": "danza",
     "image": "/disciplines/floorwork.webp",
     "description": "Movimiento en el suelo con giros, transiciones y desplazamientos fluidos.",
     "imageClasses": "[object-position:center_50%]"
   },
   {
-    "name": "Heels Dance",
-    "image": "/disciplines/heels-dance.webp",
-    "description": "Danza en tacones que combina técnica, sensualidad y expresión corporal.",
+    "name": "Chair Dance",
+    "category": "danza",
+    "image": "/disciplines/chair-dance.webp",
+    "description": "Coreografías con la silla que integran técnica, sensualidad y expresión escénica."
+  },
+  {
+    "name": "Ori Tahiti",
+    "category": "danza",
+    "image": "/disciplines/ori-tahiti.webp",
+    "description": "Danza de la Polinesia Francesa, llena de energía y expresión corporal.",
+    "imageClasses": "[object-position:center_top]"
+  },
+  {
+    "name": "Flexibilidad",
+    "category": "danza",
+    "image": "/disciplines/flexibilidad.webp",
+    "description": "Mejora tu movilidad y elasticidad con estiramientos progresivos.",
     "imageClasses": "[object-position:center_40%]"
   },
   {
-    "name": "Sonoterapia",
-    "image": "/disciplines/cuencos-y-gong.webp",
-    "description": "Baño de Gong y Cuencos. Experiencia sonora que libera tensiones y relaja.",
-    "imageClasses": "[object-position:center_70%]"
+    "name": "Terapia Física y Ocupacional para el Adulto Mayor",
+    "category": "danza",
+    "image": "/disciplines/terapia-fisica.webp",
+    "description": "Programa terapéutico para mejorar movilidad, independencia y bienestar en la tercera edad.",
+    "imageClasses": "[object-position:center_30%]"
   },
   {
     "name": "Yoga",
+    "category": "wellness",
     "image": "/disciplines/yoga.webp",
     "description": "Equilibrio físico y mental con instructores certificados. Relájate y reconecta.",
     "imageClasses": "[object-position:center_50%]"
+  },
+  {
+    "name": "Sonoterapia",
+    "category": "wellness",
+    "image": "/disciplines/cuencos-y-gong.webp",
+    "description": "Baño de Gong y Cuencos. Experiencia sonora que libera tensiones y relaja profundamente.",
+    "imageClasses": "[object-position:center_70%]"
   }
 ]
