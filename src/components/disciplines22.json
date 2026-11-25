@@ -1,33 +1,57 @@
 [
-    {
-      "name": "Yoga",
-      "image": "/disciplines/yoga_meditacion.webp",
-      "description": "Clases de yoga y meditación en Toluca, Metepec y Zinacantepec. Encuentra tu equilibrio mental y físico con instructores certificados. ¡Únete para relajarte y reconectar contigo mismo!"
-    },
-    {
-      "name": "Terapia Física y Ocupacional",
-      "image": "/disciplines/terapia-fisica.webp",
-      "description": "Mejora tu calidad de vida con terapias especializadas para adultos mayores. ¡Cuídate con nosotros!"
-    },
-    {
-      "name": "Heels Dance",
-      "image": "/disciplines/Heels-Dance.webp",
-      "description": "Clases de Heels Dance en Toluca, Metepec y Zinacantepec. Empodérate a través del movimiento y la danza moderna. ¡Pisa con confianza y únete a nuestra clase de baile con tacones!"
-    },
-    {
-      "name": "Danzas Polinesias",
-      "image": "/disciplines/danza-polinesia.webp",
-      "description": "Clases de danzas polinesias en Toluca, Metepec y Zinacantepec. Vive la cultura y la alegría a través del ritmo y la danza polinesia. ¡Deja que tu cuerpo exprese felicidad!"
-    },
-    {
-      "name": "Meditación y Atención Plena",
-      "image": "/disciplines/meditacion.webp",
-      "description": "Clases de meditación y mindfulness en Toluca, Metepec y Zinacantepec. Reduce el estrés y mejora tu bienestar emocional con meditaciones guiadas. ¡Descubre la atención plena con nosotros!"
-    },
-    {
-      "name": "Flexibilidad",
-      "image": "/disciplines/flex.webp",
-      "description": "Clases de flexibilidad y movilidad en Toluca, Metepec y Zinacantepec. Mejora tu rango de movimiento y movilidad. ¡Únete a nuestras clases de flexibilidad y siente la diferencia!"
-    }
-  ]
-      
+  {
+    "name": "Heels Dance",
+    "category": "danza",
+    "image": "/disciplines/Heels-Dance.webp",
+    "description": "Danza en tacones que combina técnica, sensualidad y expresión corporal.",
+    "imageClasses": "[object-position:center_40%]"
+  },
+  {
+    "name": "Floorwork",
+    "category": "danza",
+    "image": "/disciplines/floorwork.webp",
+    "description": "Movimiento en el suelo con giros, transiciones y desplazamientos fluidos.",
+    "imageClasses": "[object-position:center_50%]"
+  },
+  {
+    "name": "Chair Dance",
+    "category": "danza",
+    "image": "/disciplines/chair-dance.webp",
+    "description": "Coreografías con la silla que integran técnica, sensualidad y expresión escénica."
+  },
+  {
+    "name": "Ori Tahiti",
+    "category": "danza",
+    "image": "/disciplines/ori-tahiti.webp",
+    "description": "Danza de la Polinesia Francesa, llena de energía y expresión corporal.",
+    "imageClasses": "[object-position:center_top]"
+  },
+  {
+    "name": "Flexibilidad",
+    "category": "danza",
+    "image": "/disciplines/flexibilidad.webp",
+    "description": "Mejora tu movilidad y elasticidad con estiramientos progresivos.",
+    "imageClasses": "[object-position:center_40%]"
+  },
+  {
+    "name": "Terapia Física y Ocupacional para el Adulto Mayor",
+    "category": "danza",
+    "image": "/disciplines/terapia-fisica.webp",
+    "description": "Programa terapéutico para mejorar movilidad, independencia y bienestar en la tercera edad.",
+    "imageClasses": "[object-position:center_30%]"
+  },
+  {
+    "name": "Yoga",
+    "category": "wellness",
+    "image": "/disciplines/yoga.webp",
+    "description": "Equilibrio físico y mental con instructores certificados. Relájate y reconecta.",
+    "imageClasses": "[object-position:center_50%]"
+  },
+  {
+    "name": "Sonoterapia",
+    "category": "wellness",
+    "image": "/disciplines/cuencos-y-gong.webp",
+    "description": "Baño de Gong y Cuencos. Experiencia sonora que libera tensiones y relaja profundamente.",
+    "imageClasses": "[object-position:center_70%]"
+  }
+]

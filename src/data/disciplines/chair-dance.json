@@ -1,0 +1,73 @@
+{
+  "id": "chair-dance",
+  "name": "Chair Dance",
+  "slug": "chair-dance",
+  "heroSection": {
+    "title": "Chair Dance",
+    "subtitle": "Danza, sensualidad y escena con la silla",
+    "description": "El Chair Dance es un estilo de danza que combina sensualidad, técnica y expresión escénica en coreografías que integran la silla como elemento principal. En Cuántica Studio aprenderás a bailar con la silla, incorporando movimientos y figuras que te permitirán crear tus propias interpretaciones, desarrollar tu estilo y ganar seguridad al bailar.",
+    "mainImage": "/disciplines/chair-dance.webp",
+    "ctaText": "Reserva tu clase",
+    "ctaLink": "/#contacto"
+  },
+  "whyCuantica": {
+    "title": "¿Por qué practicar Chair Dance en Cuántica Studio?",
+    "description": "En Cuántica Studio llevamos el Chair Dance más allá de lo convencional. Nuestro salón está diseñado para sumergirte en un ambiente donde la iluminación, la música y cada detalle se integran para hacer de la danza una experiencia envolvente. Podrás formar parte de clases temáticas, sesiones exclusivas y proyectos creativos.",
+    "image": {
+      "url": "/disciplines/chair-dance.webp",
+      "alt": "Clase de Chair Dance en Cuántica Studio"
+    }
+  },
+  "benefits": {
+    "title": "Beneficios del Chair Dance",
+    "items": [
+      {
+        "title": "Coordinación y Control",
+        "description": "Desarrolla coordinación corporal y aprende a integrar la silla como extensión de tu cuerpo.",
+        "icon": "coordination"
+      },
+      {
+        "title": "Expresión Escénica",
+        "description": "Aprende a interpretar coreografías combinando técnica, sensualidad y presencia escénica.",
+        "icon": "expression"
+      },
+      {
+        "title": "Confianza Personal",
+        "description": "Descubre una nueva faceta de ti misma mientras exploras tu movimiento.",
+        "icon": "confidence"
+      }
+    ]
+  },
+  "audience": {
+    "title": "¿Para quién va dirigida esta clase?",
+    "description": "¡Esta clase es para ti si tienes curiosidad por aprender a bailar con la silla, descubrir nuevas formas de movimiento y explorar una faceta diferente de ti a través de la danza! No necesitas experiencia previa, solo ganas de aprender y disfrutar el proceso a tu propio ritmo.",
+    "items": [
+      "Si tienes curiosidad por integrar la silla a tu danza",
+      "Si buscas una forma diferente de expresarte y conectarte contigo",
+      "Si quieres desarrollar coordinación y expresión escénica",
+      "Si deseas explorar tu sensualidad en un espacio seguro"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "¿Puedo aprender Chair Dance si nunca lo he practicado?",
+      "answer": "Claro, ¡no necesitas experiencia previa para comenzar! En Cuántica Studio podrás familiarizarte con esta danza de manera progresiva, construyendo las habilidades necesarias para disfrutar de las coreografías a tu propio ritmo."
+    },
+    {
+      "question": "¿Qué puedo esperar al practicar Chair Dance?",
+      "answer": "En esta clase aprenderás a utilizar la silla como elemento principal mientras exploras nuevas formas de bailar combinando técnica, sensualidad y expresión escénica en un espacio diseñado especialmente para la danza."
+    },
+    {
+      "question": "¿Qué necesito llevar a mi primera clase?",
+      "answer": "Te recomendamos ropa cómoda y flexible que te permita mover libremente, calcetines, tacones adecuados para practicar y agua para mantenerte hidratada."
+    },
+    {
+      "question": "¿Qué tan importante es la constancia?",
+      "answer": "La práctica constante te ayudará a familiarizarte con la silla, mejorar la coordinación de tus movimientos y aprender nuevas figuras y secuencias coreográficas. Cada clase representa una oportunidad para seguir desarrollando tus habilidades."
+    },
+    {
+      "question": "¿Qué habilidades necesito desarrollar?",
+      "answer": "A lo largo de tus clases trabajarás la coordinación, el control corporal, la musicalidad y la expresión escénica, aprendiendo a integrar distintos movimientos y figuras con la silla."
+    }
+  ]
+}
