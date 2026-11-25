@@ -70,44 +70,36 @@ function WelcomeScreenContent({ onHide, forceHide }: WelcomeScreenProps) {
         }}
       />
 
-      <div className="relative z-10 flex flex-col items-center text-center max-w-2xl">
+      <div className="relative z-10 w-full flex flex-col items-center justify-center text-center">
         <div
-          className="welcome-stagger mb-10 lg:mb-12"
+          className="welcome-stagger w-full flex justify-center"
           style={{ animationDelay: "60ms" }}
         >
           <img
-            src="/isologo_cuantica.svg"
+            src="/logo-vec.svg"
             alt="Cuántica Studio"
-            className="w-24 h-24 sm:w-28 sm:h-28 lg:w-36 lg:h-36 object-contain"
+            className="h-40 sm:h-56 md:h-72 lg:h-96 xl:h-[28rem] w-auto max-w-[92vw] object-contain mx-auto"
           />
         </div>
 
-        <h1
-          className="welcome-stagger welcome-title text-[52px] sm:text-[72px] md:text-[88px] lg:text-[104px] xl:text-[120px] font-bold tracking-[0.015em] leading-[0.9] uppercase"
-          style={{ animationDelay: "160ms" }}
-        >
-          Cuántica
-          <span className="welcome-subtitle block w-full text-right normal-case text-lg sm:text-2xl md:text-[28px] lg:text-[32px] xl:text-[36px] font-normal mt-1 tracking-[0.02em]">
-            Studio
-          </span>
-        </h1>
+        <div className="w-full max-w-2xl mx-auto flex flex-col items-center">
+          <p
+            className="welcome-stagger welcome-tagline mt-10 lg:mt-14 text-2xl sm:text-3xl md:text-4xl lg:text-[44px] italic font-normal leading-tight"
+            style={{ animationDelay: "200ms" }}
+          >
+            Hoy vas a dar un salto cuántico
+          </p>
 
-        <p
-          className="welcome-stagger welcome-tagline mt-10 lg:mt-14 text-xl sm:text-2xl lg:text-3xl italic font-normal leading-relaxed"
-          style={{ animationDelay: "280ms" }}
-        >
-          Hoy vas a dar un salto cuántico
-        </p>
-
-        <div
-          className="welcome-stagger welcome-indicator mt-14 lg:mt-20 flex flex-col items-center gap-3"
-          style={{ animationDelay: "440ms" }}
-        >
-          <span className="text-[11px] tracking-[0.3em] uppercase font-medium">
-            <span className="hidden sm:inline">Haz click para continuar</span>
-            <span className="sm:hidden">Toca para continuar</span>
-          </span>
-          <span className="welcome-arrow" aria-hidden />
+          <div
+            className="welcome-stagger welcome-indicator mt-14 lg:mt-20 flex flex-col items-center gap-3"
+            style={{ animationDelay: "340ms" }}
+          >
+            <span className="text-[11px] tracking-[0.3em] uppercase font-medium">
+              <span className="hidden sm:inline">Haz click para continuar</span>
+              <span className="sm:hidden">Toca para continuar</span>
+            </span>
+            <span className="welcome-arrow" aria-hidden />
+          </div>
         </div>
       </div>
 
