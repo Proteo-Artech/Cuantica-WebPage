@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { TbMapPin, TbMail, TbPhone, TbClock } from "react-icons/tb";
+import { TbMapPin, TbMail, TbPhone } from "react-icons/tb";
 import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const disciplinas: [string, string][] = [
@@ -63,11 +62,12 @@ export default function Footer() {
         <div className="w-full max-w-[1500px] mx-auto">
           <div className="grid lg:grid-cols-12 gap-10 lg:gap-14 mb-14 lg:mb-16 items-start">
             <div className="lg:col-span-5">
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src="/logo-vec.svg"
                 alt="Cuántica Studio"
-                width={260}
-                height={132}
+                width={1182}
+                height={473}
                 className="h-24 lg:h-28 w-auto brightness-0 invert"
               />
             </div>
@@ -173,16 +173,6 @@ export default function Footer() {
                   />
                   <span>+52 722 670 9287</span>
                 </a>
-                <div className="flex items-start gap-3 pt-2 border-t border-white/10 mt-1">
-                  <TbClock
-                    className="w-4 h-4 shrink-0 mt-1"
-                    style={{ color: "var(--color-pink-vibrant)" }}
-                  />
-                  <div className="flex flex-col gap-1">
-                    <span>Lun – Vie: 6:00 AM – 10:00 PM</span>
-                    <span>Sáb – Dom: 7:00 AM – 11:00 AM</span>
-                  </div>
-                </div>
               </div>
             </div>
           </div>

@@ -6,11 +6,11 @@ import { Analytics } from "@vercel/analytics/next";
 import StructuredData from "@/components/StructuredData";
 
 export const metadata: Metadata = {
-  title: "Cuántica Studio – Yoga, Bienestar y Flexibilidad en Toluca y Metepec",
+  title: "Cuántica Studio | Danza, Yoga y Bienestar en Toluca",
   description:
-    "En Cuántica Studio, tu santuario de bienestar integral en Toluca, Metepec, Zinacantepec y Lerma, nutrimos tu cuerpo, mente y espíritu. Disfruta de clases de yoga, meditación guiada, danza, cuencos del Himalaya y entrenamientos de flexibilidad en un ambiente cálido y acogedor. Vive el equilibrio, la armonía y la transformación personal cerca de ti.",
+    "Conoce Cuántica Studio en Toluca: clases de danza, Heels Dance, Floorwork, Chair Dance, Danzas Polinesias, Yoga, Flexibilidad y Sonoterapia. Movimiento, expresión y bienestar en un solo espacio.",
   keywords:
-    "yoga en Toluca, yoga en Metepec, yoga en Zinacantepec, yoga en Lerma, clases de yoga Toluca, meditación Toluca, cuencos tibetanos Toluca, bienestar integral Toluca, flexibilidad Toluca, yoga cerca de mi, meditación cerca de mi, bienestar Toluca, transformación personal Estado de México",
+    "danza en Toluca, heels dance Toluca, floorwork Toluca, chair dance Toluca, danzas polinesias Toluca, yoga en Toluca, flexibilidad Toluca, sonoterapia Toluca, clases de danza Toluca, bienestar Toluca, Metepec, Zinacantepec, Lerma, Cuántica Studio",
   authors: [{ name: "Cuántica Studio" }],
   creator: "Cuántica Studio",
   publisher: "Cuántica Studio",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
     canonical: "https://cuantica-studio.mx",
   },
   openGraph: {
-    title: "Cuántica Studio – Yoga, Bienestar y Flexibilidad en Toluca y Metepec",
+    title: "Cuántica Studio | Danza, Yoga y Bienestar en Toluca",
     description:
-      "En Cuántica Studio, tu santuario de bienestar integral en Toluca, Metepec, Zinacantepec y Lerma, nutrimos tu cuerpo, mente y espíritu. Disfruta de clases de yoga, meditación guiada, danza, cuencos del Himalaya y entrenamientos de flexibilidad en un ambiente cálido y acogedor.",
+      "Conoce Cuántica Studio en Toluca: clases de danza, Heels Dance, Floorwork, Chair Dance, Danzas Polinesias, Yoga, Flexibilidad y Sonoterapia. Movimiento, expresión y bienestar en un solo espacio.",
     url: "https://cuantica-studio.mx",
     siteName: "Cuántica Studio",
     locale: "es_MX",
@@ -41,15 +41,15 @@ export const metadata: Metadata = {
         url: "https://cuantica-studio.mx/logo.jpeg",
         width: 1200,
         height: 630,
-        alt: "Cuántica Studio - Yoga, Bienestar y Flexibilidad en Toluca y Metepec",
+        alt: "Cuántica Studio - Danza, Yoga y Bienestar en Toluca",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cuántica Studio – Yoga, Bienestar y Flexibilidad en Toluca y Metepec",
+    title: "Cuántica Studio | Danza, Yoga y Bienestar en Toluca",
     description:
-      "En Cuántica Studio, tu santuario de bienestar integral en Toluca, Metepec, Zinacantepec y Lerma. Clases de yoga, meditación, danza y flexibilidad.",
+      "Conoce Cuántica Studio en Toluca: clases de danza, Heels Dance, Floorwork, Chair Dance, Danzas Polinesias, Yoga, Flexibilidad y Sonoterapia.",
     images: ["https://cuantica-studio.mx/logo.jpeg"],
   },
   robots: {

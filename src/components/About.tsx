@@ -66,32 +66,16 @@ export default function About() {
 
       <div className="relative z-10 pt-48 lg:pt-52 pb-20 lg:pb-24 px-6 sm:px-10 lg:px-16 xl:px-24">
         <div className="w-full max-w-[1500px] mx-auto">
-          <div className="grid lg:grid-cols-12 gap-8 lg:gap-14 mb-16 lg:mb-20">
-            <div className="lg:col-span-7">
-              <h2 className="about-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-[0.01em] text-[var(--color-black-soft)] leading-[0.95] uppercase">
-                ¿Qué es
-                <span
-                  className="block italic font-normal normal-case tracking-[-0.01em] mt-1"
-                  style={{ color: "var(--color-plum)" }}
-                >
-                  Cuántica Studio?
-                </span>
-              </h2>
-            </div>
-            <div className="lg:col-span-5 flex items-end">
-              <p className="about-lead text-xl sm:text-2xl lg:text-[26px] italic font-normal text-[var(--color-black-soft)]/85 leading-snug">
-                Un espacio{" "}
-                <span style={{ color: "var(--color-plum)" }}>
-                  multidisciplinario
-                </span>{" "}
-                donde el arte, el movimiento y el bienestar convergen para
-                crear experiencias que{" "}
-                <span style={{ color: "var(--color-pink-vibrant)" }}>
-                  trascienden lo convencional
-                </span>
-                .
-              </p>
-            </div>
+          <div className="max-w-4xl mb-16 lg:mb-20">
+            <h2 className="about-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-[0.01em] text-[var(--color-black-soft)] leading-[0.95] uppercase">
+              ¿Qué es
+              <span
+                className="block italic font-normal normal-case tracking-[-0.01em] mt-1"
+                style={{ color: "var(--color-plum)" }}
+              >
+                Cuántica Studio?
+              </span>
+            </h2>
           </div>
 
           <div className="flex items-center gap-6 mb-16 lg:mb-20">

@@ -39,7 +39,7 @@ export default function Hero({ city, tagline }: HeroProps) {
     tagline ||
     (city
       ? `Santuario de paz y conexión en ${city} y alrededores. Un espacio para salir de la rutina y descubrir lo que tu cuerpo y mente pueden experimentar.`
-      : "Santuario de paz y conexión, donde darás un salto cuántico. Un espacio donde podrás salir de la rutina y conocerás las diferentes disciplinas que tu cuerpo y mente es capaz de experimentar.");
+      : "Un espacio multidisciplinario donde el arte, el movimiento y el bienestar convergen para crear experiencias que trascienden lo convencional.");
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
