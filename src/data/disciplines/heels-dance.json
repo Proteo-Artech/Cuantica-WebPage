@@ -8,6 +8,7 @@
     "description": "Heels Dance es un estilo de danza en tacones que combina técnica, sensualidad y expresión corporal. En Cuántica Studio, a través de coreografías y entrenamiento técnico, desarrollarás tu confianza, explorarás tu sensualidad y descubrirás nuevas formas de expresarte con libertad y seguridad.",
     "tagline": "En Cuántica no solo vienes a bailar, vienes a vivir una experiencia que transforma.",
     "mainImage": "/disciplines/heels-dance-2.webp",
+    "heroImageAspect": "aspect-[4/3] sm:aspect-[16/10]",
     "ctaText": "Reserva tu clase",
     "ctaLink": "/#contacto"
   },
