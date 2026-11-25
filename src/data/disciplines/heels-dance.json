@@ -25,7 +25,8 @@
     ],
     "image": {
       "url": "/disciplines/heels-dance-3.webp",
-      "alt": "Clase de Heels Dance en Cuántica Studio"
+      "alt": "Clase de Heels Dance en Cuántica Studio",
+      "fit": "cover"
     }
   },
   "benefits": {
