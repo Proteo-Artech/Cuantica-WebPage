@@ -121,7 +121,7 @@ export default function Contact() {
             </div>
             <p className="text-base sm:text-lg text-center text-[var(--color-black-soft)]/80 font-light max-w-2xl mx-auto leading-relaxed">
               Horarios sujetos a cambios. Te recomendamos contactarnos para
-              compartirte los horarios.
+              compartirte los horarios del mes.
             </p>
           </div>
 
