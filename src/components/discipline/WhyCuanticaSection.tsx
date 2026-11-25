@@ -114,13 +114,16 @@ export default function WhyCuanticaSection({
             }}
           >
             <div className="grid lg:grid-cols-2">
-              <div className="relative aspect-[4/3] lg:aspect-auto lg:min-h-[480px]">
+              <div
+                className="relative aspect-[4/3] lg:aspect-auto lg:min-h-[520px]"
+                style={{ background: "#000000" }}
+              >
                 <Image
                   src={image.url}
                   alt={image.alt}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-cover"
+                  className="object-contain object-center"
                 />
               </div>
 

@@ -9,7 +9,7 @@ interface Highlight {
 interface AudienceSectionProps {
   title: string;
   description: string;
-  items: string[];
+  items?: string[];
   highlights?: Highlight[];
   pullQuote?: string;
 }
@@ -90,31 +90,39 @@ export default function AudienceSection({
             {title && <span className="sr-only">{title}</span>}
           </div>
 
-          <ul className="grid sm:grid-cols-2 gap-3 lg:gap-4 max-w-4xl mx-auto">
-            {items.map((item) => (
-              <li
-                key={item}
-                className="info-card-lit flex items-center gap-4 rounded-2xl px-5 py-4 lg:px-6 lg:py-5"
-                style={{
-                  background: "rgba(254, 250, 244, 0.78)",
-                  border: "1px solid rgba(168, 48, 127, 0.14)",
-                }}
-              >
-                <span
-                  className="w-8 h-8 shrink-0 rounded-full flex items-center justify-center"
-                  style={{ background: "rgba(238, 33, 127, 0.14)" }}
+          {items && items.length > 0 && (
+            <ul className="grid sm:grid-cols-2 gap-3 lg:gap-4 max-w-4xl mx-auto">
+              {items.map((item, index) => {
+                const isOrphan =
+                  items.length % 2 === 1 && index === items.length - 1;
+                return (
+                <li
+                  key={item}
+                  className={`info-card-lit flex items-center gap-4 rounded-2xl px-5 py-4 lg:px-6 lg:py-5 ${
+                    isOrphan ? "sm:col-span-2 sm:max-w-md sm:mx-auto sm:w-full" : ""
+                  }`}
+                  style={{
+                    background: "rgba(254, 250, 244, 0.78)",
+                    border: "1px solid rgba(168, 48, 127, 0.14)",
+                  }}
                 >
-                  <TbCheck
-                    className="w-[18px] h-[18px]"
-                    style={{ color: "var(--color-pink-vibrant)" }}
-                  />
-                </span>
-                <p className="text-[15px] lg:text-base text-[var(--color-black-soft)]/90 leading-[1.5] font-light">
-                  {item}
-                </p>
-              </li>
-            ))}
-          </ul>
+                  <span
+                    className="w-8 h-8 shrink-0 rounded-full flex items-center justify-center"
+                    style={{ background: "rgba(238, 33, 127, 0.14)" }}
+                  >
+                    <TbCheck
+                      className="w-[18px] h-[18px]"
+                      style={{ color: "var(--color-pink-vibrant)" }}
+                    />
+                  </span>
+                  <p className="text-[15px] lg:text-base text-[var(--color-black-soft)]/90 leading-[1.5] font-light">
+                    {item}
+                  </p>
+                </li>
+                );
+              })}
+            </ul>
+          )}
 
           {pullQuote && (
             <figure className="mt-12 lg:mt-14 max-w-3xl mx-auto text-center">

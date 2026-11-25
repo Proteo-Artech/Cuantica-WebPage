@@ -3,6 +3,7 @@ import { promises as fs } from "fs";
 import path from "path";
 import { Metadata } from "next";
 import Image from "next/image";
+import { ReactNode } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BenefitsSection from "@/components/discipline/BenefitsSection";
@@ -11,6 +12,39 @@ import AudienceSection from "@/components/discipline/AudienceSection";
 import FAQSection from "@/components/discipline/FAQSection";
 import CTASection from "@/components/discipline/CTASection";
 import DisciplineSEO from "@/components/discipline/DisciplineSEO";
+
+const highlightColor: Record<"plum" | "pink", string> = {
+  plum: "var(--color-pink-pastel)",
+  pink: "var(--color-pink-vibrant)",
+};
+
+function renderHeroText(
+  text: string,
+  highlights?: Array<{ phrase: string; color: "plum" | "pink" }>
+): ReactNode {
+  if (!highlights || !highlights.length) return text;
+  const hits: Array<{ start: number; end: number; color: string }> = [];
+  for (const { phrase, color } of highlights) {
+    const idx = text.indexOf(phrase);
+    if (idx === -1) continue;
+    hits.push({ start: idx, end: idx + phrase.length, color: highlightColor[color] });
+  }
+  if (!hits.length) return text;
+  hits.sort((a, b) => a.start - b.start);
+  const parts: ReactNode[] = [];
+  let cursor = 0;
+  hits.forEach((h, i) => {
+    if (h.start > cursor) parts.push(text.slice(cursor, h.start));
+    parts.push(
+      <span key={`h-${i}`} className="font-medium" style={{ color: h.color }}>
+        {text.slice(h.start, h.end)}
+      </span>
+    );
+    cursor = h.end;
+  });
+  if (cursor < text.length) parts.push(text.slice(cursor));
+  return parts;
+}
 
 // Marcar la página como renderizada en el servidor
 export const dynamic = "force-static";
@@ -22,14 +56,17 @@ interface Discipline {
   slug: string;
   heroSection: {
     title: string;
-    subtitle: string;
+    subtitle?: string;
     description: string;
+    descriptionHighlights?: Array<{ phrase: string; color: "plum" | "pink" }>;
     tagline?: string;
     mainImage: string;
+    heroImageAspect?: string;
+    heroImageObjectPosition?: string;
     ctaText: string;
     ctaLink: string;
   };
-  benefits: {
+  benefits?: {
     title: string;
     items: Array<{
       title: string;
@@ -52,7 +89,7 @@ interface Discipline {
   audience: {
     title: string;
     description: string;
-    items: string[];
+    items?: string[];
     highlights?: Array<{ phrase: string; color: "plum" | "pink" }>;
     pullQuote?: string;
   };
@@ -97,9 +134,9 @@ export default async function DisciplinePage(props: {
       />
       <Header />
       <main className="min-h-screen bg-[var(--color-black-soft)]">
-        <section className="relative w-full overflow-hidden bg-[var(--color-black-soft)] pt-28 sm:pt-32 lg:pt-36">
+        <section className="relative w-full overflow-hidden bg-[var(--color-black-soft)] pt-32 sm:pt-36 lg:pt-40">
           <div className="grid lg:grid-cols-2 gap-0 lg:min-h-[600px] lg:max-h-[680px]">
-            <div className="relative flex flex-col justify-center px-6 sm:px-10 lg:px-14 xl:px-20 pb-12 lg:py-16 order-2 lg:order-1">
+            <div className="relative flex flex-col justify-center px-6 sm:px-10 lg:px-14 xl:px-20 pt-8 sm:pt-10 lg:pt-0 pb-14 lg:py-16 order-2 lg:order-1">
               <div className="w-full max-w-xl">
                 <span
                   className="animate-fade-in hidden sm:flex items-center gap-3 mb-6 lg:mb-8"
@@ -119,7 +156,7 @@ export default async function DisciplinePage(props: {
                 </span>
 
                 <h1
-                  className="hero-title animate-fade-in text-white leading-[0.9] tracking-[-0.02em] uppercase font-bold text-[56px] sm:text-[72px] md:text-[80px] lg:text-[80px] xl:text-[92px]"
+                  className="hero-title animate-fade-in text-white leading-[0.9] tracking-[-0.02em] uppercase font-bold text-[30px] sm:text-[44px] md:text-[56px] lg:text-[60px] xl:text-[72px] break-words"
                   style={{ animationDelay: "100ms" }}
                 >
                   {(() => {
@@ -139,21 +176,26 @@ export default async function DisciplinePage(props: {
                   })()}
                 </h1>
 
-                <p
-                  className="animate-fade-in mt-6 sm:mt-7 text-lg sm:text-xl lg:text-[22px] italic font-normal text-white/90 leading-snug"
-                  style={{
-                    animationDelay: "180ms",
-                    fontFamily: '"Playfair Display", Georgia, serif',
-                  }}
-                >
-                  {discipline.heroSection.subtitle}
-                </p>
+                {discipline.heroSection.subtitle && (
+                  <p
+                    className="animate-fade-in mt-6 sm:mt-7 text-lg sm:text-xl lg:text-[22px] italic font-normal text-white/90 leading-snug"
+                    style={{
+                      animationDelay: "180ms",
+                      fontFamily: '"Playfair Display", Georgia, serif',
+                    }}
+                  >
+                    {discipline.heroSection.subtitle}
+                  </p>
+                )}
 
                 <p
-                  className="hero-supporting animate-fade-in mt-5 sm:mt-6 text-sm sm:text-base lg:text-[17px] leading-relaxed font-light text-white/78"
+                  className={`hero-supporting animate-fade-in ${discipline.heroSection.subtitle ? "mt-5 sm:mt-6" : "mt-6 sm:mt-7"} text-sm sm:text-base lg:text-[17px] leading-relaxed font-light text-white/80`}
                   style={{ animationDelay: "260ms" }}
                 >
-                  {discipline.heroSection.description}
+                  {renderHeroText(
+                    discipline.heroSection.description,
+                    discipline.heroSection.descriptionHighlights
+                  )}
                 </p>
 
                 {discipline.heroSection.tagline && (
@@ -198,7 +240,12 @@ export default async function DisciplinePage(props: {
               </div>
             </div>
 
-            <div className="relative order-1 lg:order-2 aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[600px] lg:max-h-[680px] overflow-hidden rounded-tl-3xl">
+            <div
+              className={`relative order-1 lg:order-2 overflow-hidden rounded-tl-3xl lg:aspect-auto lg:min-h-[600px] lg:max-h-[680px] ${
+                discipline.heroSection.heroImageAspect ??
+                "aspect-[4/5] sm:aspect-[16/11]"
+              }`}
+            >
               <Image
                 src={discipline.heroSection.mainImage}
                 alt={`${discipline.heroSection.title} en Cuántica Studio Toluca`}
@@ -207,7 +254,11 @@ export default async function DisciplinePage(props: {
                 quality={95}
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
-                style={{ objectPosition: "center center" }}
+                style={{
+                  objectPosition:
+                    discipline.heroSection.heroImageObjectPosition ??
+                    "center center",
+                }}
               />
               <div
                 aria-hidden
@@ -222,7 +273,7 @@ export default async function DisciplinePage(props: {
         </section>
 
         <WhyCuanticaSection {...discipline.whyCuantica} />
-        <BenefitsSection {...discipline.benefits} />
+        {discipline.benefits && <BenefitsSection {...discipline.benefits} />}
         <AudienceSection {...discipline.audience} />
         <FAQSection faqs={discipline.faqs} />
         <CTASection disciplineName={discipline.name} />
