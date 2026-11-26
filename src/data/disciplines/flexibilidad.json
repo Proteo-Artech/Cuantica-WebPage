@@ -1,73 +1,100 @@
 {
   "id": "flexibilidad",
-  "name": "Flexibilidad",
+  "name": "Flexibilidad y Stretching",
   "slug": "flexibilidad",
   "heroSection": {
-    "title": "Flexibilidad",
-    "subtitle": "Ábrete al movimiento libre",
-    "description": "La clase de Flexibilidad trabaja el estiramiento progresivo de músculos y articulaciones mediante técnicas guiadas de movilidad, respiración y control corporal. Es ideal si sientes el cuerpo rígido, buscas mejorar tu rango de movimiento o quieres complementar otra disciplina física con una recuperación más consciente. Disponible en nuestro estudio de Toluca.",
+    "title": "Flexibilidad y Stretching",
+    "description": "La Flexibilidad y Stretching es una disciplina enfocada en mejorar la movilidad, elasticidad y amplitud de movimiento del cuerpo mediante estiramientos y ejercicios de control corporal. En Cuántica Studio desarrollarás mayor flexibilidad, liberarás tensiones musculares y mejorarás tu postura, fuerza y conciencia corporal a través de ejercicios progresivos que te permitirán conectar con tu cuerpo y descubrir todo su potencial.",
+    "descriptionHighlights": [
+      { "phrase": "conectar con tu cuerpo y descubrir todo su potencial", "color": "plum" }
+    ],
     "mainImage": "/disciplines/flexibilidad.webp",
-    "ctaText": "Empieza hoy",
+    "ctaText": "Reserva tu clase",
     "ctaLink": "/#contacto"
   },
   "whyCuantica": {
-    "title": "¿Por qué entrenar tu Flexibilidad en Cuántica Studio?",
-    "description": "En Cuántica Studio trabajamos la flexibilidad con progresiones seguras y supervisadas, evitando forzar el cuerpo antes de tiempo. El instructor ajusta cada estiramiento a tu nivel actual de movilidad, para que avances de forma constante y sin lesiones, dentro de un ambiente tranquilo pensado para escuchar tu cuerpo.",
+    "title": "¿Por qué practicar Flexibilidad y Stretching en Cuántica Studio?",
+    "description": "En Cuántica Studio encontrarás un espacio diseñado para que desarrolles tu flexibilidad a través de clases guiadas y un ambiente que te invita a superar tus propios límites.",
+    "secondaryDescription": "Nos distinguimos por ofrecer una experiencia donde la técnica, el movimiento y el bienestar se unen para ayudarte a avanzar a tu propio ritmo, mejorar tu movilidad y descubrir nuevas posibilidades en tu cuerpo.",
+    "pullQuote": "En Cuántica queremos que disfrutes cada logro, ganes confianza en tus capacidades y hagas de tu bienestar parte de tu estilo de vida.",
+    "highlights": [
+      { "phrase": "superar tus propios límites", "color": "plum" },
+      { "phrase": "parte de tu estilo de vida", "color": "pink" }
+    ],
     "image": {
-      "url": "/disciplines/flexibilidad.webp",
-      "alt": "Clase de Flexibilidad en Cuántica Studio"
+      "url": "/disciplines/flexibilidad-2.webp",
+      "alt": "Clase de Flexibilidad y Stretching en Cuántica Studio",
+      "fit": "cover"
     }
   },
   "benefits": {
-    "title": "Resultados que notarás practicando Flexibilidad con nosotros",
+    "title": "Lo que vas a vivir en cada clase",
     "items": [
       {
-        "title": "Mayor Rango de Movimiento",
-        "description": "Gana movilidad articular real, con técnicas específicas según tu nivel de flexibilidad actual.",
-        "icon": "mobility"
+        "title": "Movilidad y rango",
+        "description": "Combinarás estiramientos, movilidad articular y ejercicios de flexibilidad para mejorar progresivamente tu elasticidad, postura y rango de movimiento.",
+        "icon": "technique",
+        "highlights": [
+          { "phrase": "rango de movimiento", "color": "pink" }
+        ]
       },
       {
-        "title": "Prevención de Lesiones",
-        "description": "Fortalece músculos y articulaciones alrededor del estiramiento, reduciendo el riesgo de lesiones en tu día a día o en otros deportes.",
-        "icon": "injury-prevention"
+        "title": "Postura y conciencia corporal",
+        "description": "Mejorarás tu postura, fuerza y conciencia corporal con ejercicios progresivos que te permitirán conectar con tu cuerpo.",
+        "icon": "posture",
+        "highlights": [
+          { "phrase": "conciencia corporal", "color": "plum" }
+        ]
       },
       {
-        "title": "Relajación Muscular",
-        "description": "Alivia tensiones acumuladas y mejora tu recuperación física entre entrenamientos o después de largas jornadas.",
-        "icon": "relax"
+        "title": "Liberación y bienestar",
+        "description": "Liberarás tensiones musculares y descubrirás nuevas posibilidades en tu cuerpo dentro de un espacio de aprendizaje y acompañamiento.",
+        "icon": "experience",
+        "highlights": [
+          { "phrase": "nuevas posibilidades en tu cuerpo", "color": "pink" }
+        ]
       }
     ]
   },
   "audience": {
-    "title": "¿Para quién es la clase de Flexibilidad en Cuántica Studio?",
-    "description": "Nuestras clases de Flexibilidad en Toluca están diseñadas para adaptarse a tu punto de partida, sin importar qué tan rígido sientas el cuerpo hoy.",
+    "title": "¿Para quién va dirigida esta clase?",
+    "description": "La clase está dirigida a todas las personas que desean mejorar su movilidad, elasticidad y bienestar corporal, sin importar su edad o nivel de experiencia. Es ideal para:",
+    "highlights": [
+      { "phrase": "sin importar su edad o nivel de experiencia", "color": "plum" }
+    ],
+    "pullQuote": "No necesitas ser flexible para comenzar. Nuestras clases son una oportunidad para avanzar a tu propio ritmo, sin importar desde dónde empiezas.",
     "items": [
-      "Si sientes el cuerpo rígido y quieres ganar movilidad progresivamente",
-      "Si practicas otro deporte o disciplina y buscas complementarlo con estiramiento guiado",
-      "Si quieres prevenir lesiones y mejorar tu recuperación muscular",
-      "Si buscas un espacio tranquilo para escuchar y cuidar tu cuerpo"
+      "Principiantes: personas que desean comenzar a trabajar su flexibilidad desde cero.",
+      "Personas con poca movilidad: que buscan mejorar su amplitud de movimiento y reducir la rigidez corporal.",
+      "Bailarines y deportistas: que desean complementar su entrenamiento y mejorar su rendimiento físico.",
+      "Personas que pasan mucho tiempo sentadas: que buscan liberar tensiones y recuperar movilidad.",
+      "Quienes buscan bienestar: personas interesadas en conectar con su cuerpo, mejorar su postura y dedicar tiempo a su cuidado personal."
     ]
   },
   "faqs": [
     {
-      "question": "¿Necesito ser flexible para empezar?",
-      "answer": "No, la clase está diseñada precisamente para quienes sienten el cuerpo rígido; se avanza de forma progresiva y segura desde tu punto de partida."
+      "question": "¿Es difícil aprender Flexibilidad y Stretching si estoy comenzando desde cero?",
+      "answer": "¡Para nada! No necesitas tener experiencia previa ni ser flexible para comenzar. En Cuántica Studio las clases te permiten desarrollar tu flexibilidad de manera progresiva, con ejercicios guiados y adaptados a tus capacidades. Lo importante no es cuánto puedes estirarte al principio, sino disfrutar el proceso y reconocer cada avance. ¡Todos los cuerpos tienen un punto de partida!"
     },
     {
-      "question": "¿Qué debo llevar a clase?",
-      "answer": "Ropa cómoda que permita el estiramiento, una toalla y agua. Contamos con tapetes y accesorios de apoyo en el estudio."
+      "question": "¿Qué puedo esperar al practicar Flexibilidad y Stretching?",
+      "answer": "En Cuántica Studio disfrutarás de una clase guiada que combina estiramientos, movilidad articular y ejercicios de flexibilidad para mejorar progresivamente tu elasticidad, postura y rango de movimiento. Encontrarás un espacio de aprendizaje y acompañamiento donde podrás avanzar a tu propio ritmo, liberar tensiones y descubrir nuevas posibilidades en tu cuerpo."
     },
     {
-      "question": "¿Puedo combinarla con otra disciplina como yoga o danza?",
-      "answer": "Sí, muchas personas la toman como complemento de otras clases para mejorar su movilidad y acelerar su recuperación muscular."
+      "question": "¿Qué necesito llevar a mi primera clase?",
+      "answer": "Te recomendamos ropa cómoda y flexible que te permita mover libremente, calcetines, tu tapete o mat y agua para mantenerte hidratada."
     },
     {
-      "question": "¿Es recomendable si tengo una lesión previa?",
-      "answer": "El estiramiento guiado puede ayudarte, pero si tienes una lesión activa o reciente, te recomendamos consultarlo primero con tu médico o fisioterapeuta antes de empezar."
+      "question": "¿Qué diferencia hay entre flexibilidad y stretching?",
+      "answer": "La flexibilidad es la capacidad de los músculos y articulaciones para alcanzar diferentes rangos de movimiento, mientras que el stretching utiliza ejercicios de estiramiento para desarrollar y mejorar esa capacidad."
     },
     {
-      "question": "¿En qué ciudad se imparte la clase de Flexibilidad?",
-      "answer": "Nuestro estudio está en Toluca y recibimos alumnos de Metepec, Zinacantepec y Lerma."
+      "question": "¿Puedo lograr hacer splits con esta clase?",
+      "answer": "¡Sí! A través de un trabajo progresivo de flexibilidad, movilidad y estiramientos específicos podrás trabajar para alcanzar movimientos como el split, siempre respetando los límites y tiempos de tu cuerpo."
+    },
+    {
+      "question": "¿Cómo puedo reservar?",
+      "answer": "Puedes reservar directamente desde nuestro sistema de reservas en línea. Si necesitas más información, también puedes contactarnos por WhatsApp al 722 670 9287 o por correo a ventas1@cuantica-studio.mx."
     }
   ]
 }

@@ -3,59 +3,67 @@
   "name": "Terapia Física y Ocupacional",
   "slug": "terapia-fisica-ocupacional",
   "heroSection": {
-    "title": "Terapia Física y Ocupacional para Adultos Mayores",
-    "subtitle": "Rehabilitación geriátrica especializada en Toluca, Metepec y Zinacantepec",
+    "title": "Terapia Física y Ocupacional",
+    "subtitle": "Rehabilitación geriátrica especializada para adultos mayores en Toluca, Metepec y Zinacantepec",
     "description": "La terapia física y ocupacional para adultos mayores combina ejercicios de movilidad, fortalecimiento y equilibrio con técnicas adaptativas para las actividades de la vida diaria. Su objetivo es prevenir caídas, recuperar funcionalidad y sostener la independencia con seguridad, en sesiones diseñadas específicamente para la tercera edad.",
+    "descriptionHighlights": [
+      { "phrase": "sostener la independencia con seguridad", "color": "plum" }
+    ],
     "mainImage": "/disciplines/terapia-fisica.webp",
     "ctaText": "¡Comienza tu rehabilitación!",
     "ctaLink": "/#contacto"
   },
   "whyCuantica": {
     "title": "¿Por qué elegir Cuántica Studio para tu rehabilitación?",
-    "description": "En Cuántica Studio combinamos terapia física y terapia ocupacional en un mismo plan de atención, pensado para adultos mayores que buscan mantenerse activos e independientes. Cada sesión se adapta a tu condición física y a tus actividades diarias reales, con seguimiento cercano y un ambiente cálido que reduce el miedo a moverte y te da confianza para progresar de forma segura.",
+    "description": "En Cuántica Studio combinamos terapia física y terapia ocupacional en un mismo plan de atención, pensado para adultos mayores que buscan mantenerse activos e independientes.",
+    "secondaryDescription": "Cada sesión se adapta a tu condición física y a tus actividades diarias reales, con seguimiento cercano y un ambiente cálido que reduce el miedo a moverte y te da confianza para progresar de forma segura.",
+    "pullQuote": "Queremos que recuperes movilidad y autonomía a tu propio ritmo, acompañada de un equipo que cuida tu bienestar integral.",
+    "highlights": [
+      { "phrase": "plan de atención", "color": "plum" },
+      { "phrase": "progresar de forma segura", "color": "pink" }
+    ],
     "image": {
       "url": "/disciplines/terapia-fisica.webp",
-      "alt": "Sesión de terapia física para adultos mayores en Cuántica Studio Toluca"
+      "alt": "Sesión de terapia física para adultos mayores en Cuántica Studio Toluca",
+      "fit": "cover"
     }
   },
   "benefits": {
-    "title": "Resultados de la Terapia Física y Ocupacional en Cuántica Studio",
+    "title": "Lo que trabajamos en cada sesión",
     "items": [
       {
-        "title": "Rehabilitación de Movilidad y Flexibilidad",
-        "description": "Mejora tu rango de movimiento articular, flexibilidad muscular y coordinación motora para mantener una vida activa e independiente.",
-        "icon": "body"
+        "title": "Movilidad y fuerza",
+        "description": "Mejoras rango de movimiento articular, flexibilidad y fuerza muscular con ejercicios adaptados a adultos mayores para sostener una vida activa.",
+        "icon": "body",
+        "highlights": [
+          { "phrase": "rango de movimiento articular", "color": "plum" }
+        ]
       },
       {
-        "title": "Fortalecimiento Muscular Seguro",
-        "description": "Ejercicios de fortalecimiento adaptados para adultos mayores, que mejoran tu estabilidad postural y ayudan a prevenir caídas.",
-        "icon": "strength"
+        "title": "Equilibrio y prevención de caídas",
+        "description": "Entrenas estabilidad postural y marcha segura con programas específicos que reducen el riesgo de caídas y de lesiones a largo plazo.",
+        "icon": "balance",
+        "highlights": [
+          { "phrase": "reducen el riesgo de caídas", "color": "pink" }
+        ]
       },
       {
-        "title": "Entrenamiento de Equilibrio y Estabilidad",
-        "description": "Programas específicos de equilibrio para reducir el riesgo de caídas y ganar seguridad al caminar y moverte.",
-        "icon": "balance"
-      },
-      {
-        "title": "Terapia Ocupacional para Actividades Diarias",
-        "description": "Técnicas adaptativas y ayudas prácticas para realizar tus actividades cotidianas con mayor autonomía y seguridad.",
-        "icon": "daily-activities"
-      },
-      {
-        "title": "Bienestar Psicosocial y Emocional",
-        "description": "Sostén tu independencia funcional y tu autoestima a través de actividades terapéuticas que también cuidan tu bienestar emocional.",
-        "icon": "mind"
-      },
-      {
-        "title": "Prevención de Lesiones",
-        "description": "Programas preventivos que reducen el riesgo de lesiones y de deterioro funcional, cuidando tu salud a largo plazo.",
-        "icon": "shield"
+        "title": "Autonomía en la vida diaria",
+        "description": "Recuperas destrezas para realizar tus actividades cotidianas con mayor independencia y bienestar emocional, acompañada de un equipo profesional.",
+        "icon": "daily-activities",
+        "highlights": [
+          { "phrase": "mayor independencia", "color": "plum" }
+        ]
       }
     ]
   },
   "audience": {
-    "title": "¿Para quién es la Terapia Física y Ocupacional en Cuántica Studio?",
-    "description": "Nuestro programa de terapia en Toluca está pensado específicamente para adultos mayores que buscan mantenerse activos e independientes, siempre bajo supervisión profesional.",
+    "title": "¿Para quién es esta terapia?",
+    "description": "Nuestro programa está pensado específicamente para adultos mayores que buscan mantenerse activos e independientes, siempre bajo supervisión profesional y adaptado a cada historia clínica.",
+    "highlights": [
+      { "phrase": "bajo supervisión profesional", "color": "plum" }
+    ],
+    "pullQuote": "No es un entrenamiento genérico: cada plan se diseña a partir de tu condición, tu historia clínica y tus objetivos reales.",
     "items": [
       "Si buscas prevenir caídas y ganar seguridad al caminar y moverte",
       "Si quieres mantener o recuperar tu independencia en actividades diarias",
@@ -65,20 +73,16 @@
   },
   "faqs": [
     {
-      "question": "¿Necesito una referencia médica para terapia física y ocupacional?",
+      "question": "¿Necesito una referencia médica para iniciar la terapia?",
       "answer": "Recomendamos tener una evaluación médica previa y, de ser posible, una referencia de tu médico geriatra para diseñar el plan de rehabilitación más adecuado a tus necesidades de salud."
     },
     {
       "question": "¿Qué incluye la evaluación inicial?",
-      "answer": "La evaluación incluye una valoración de tu estado físico, funcional y ocupacional, incluyendo equilibrio, fuerza muscular, flexibilidad y actividades de la vida diaria, para crear un plan de terapia personalizado."
-    },
-    {
-      "question": "¿Las sesiones son individuales o grupales?",
-      "answer": "Ofrecemos tanto sesiones individuales como terapias grupales, dependiendo de tus necesidades específicas y preferencias. Ambas modalidades son efectivas para la rehabilitación geriátrica."
+      "answer": "La evaluación incluye una valoración de tu estado físico, funcional y ocupacional, incluyendo equilibrio, fuerza muscular, flexibilidad y actividades de la vida diaria, para crear un plan de terapia personalizado y realista."
     },
     {
       "question": "¿Qué necesito llevar a las sesiones?",
-      "answer": "Solo ropa cómoda y zapatos antideslizantes. Nosotros proporcionamos todo el equipo terapéutico necesario."
+      "answer": "Solo ropa cómoda y zapatos antideslizantes. Nosotros proporcionamos todo el equipo terapéutico necesario durante la sesión."
     },
     {
       "question": "¿Atienden en Toluca, Metepec, Zinacantepec y Lerma?",
@@ -91,6 +95,10 @@
     {
       "question": "¿Cómo sé si mi familiar necesita este tipo de terapia?",
       "answer": "Si notas dificultad para caminar, riesgo de caídas o pérdida de autonomía en actividades cotidianas, te recomendamos consultarlo primero con su médico y, con esa orientación, agendar una evaluación inicial con nosotros."
+    },
+    {
+      "question": "¿Cómo puedo reservar?",
+      "answer": "Puedes reservar directamente desde nuestro sistema de reservas en línea. Si necesitas más información, también puedes contactarnos por WhatsApp al 722 670 9287 o por correo a ventas1@cuantica-studio.mx."
     }
   ]
 }

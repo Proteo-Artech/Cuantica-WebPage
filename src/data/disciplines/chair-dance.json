@@ -4,54 +4,77 @@
   "slug": "chair-dance",
   "heroSection": {
     "title": "Chair Dance",
-    "subtitle": "Danza, sensualidad y escena con la silla",
     "description": "El Chair Dance es un estilo de danza que combina sensualidad, técnica y expresión escénica en coreografías que integran la silla como elemento principal. En Cuántica Studio aprenderás a bailar con la silla, incorporando movimientos y figuras que te permitirán crear tus propias interpretaciones, desarrollar tu estilo y ganar seguridad al bailar.",
+    "descriptionHighlights": [
+      { "phrase": "la silla como elemento principal", "color": "plum" }
+    ],
     "mainImage": "/disciplines/chair-dance.webp",
     "ctaText": "Reserva tu clase",
     "ctaLink": "/#contacto"
   },
   "whyCuantica": {
     "title": "¿Por qué practicar Chair Dance en Cuántica Studio?",
-    "description": "En Cuántica Studio llevamos el Chair Dance más allá de lo convencional. Nuestro salón está diseñado para sumergirte en un ambiente donde la iluminación, la música y cada detalle se integran para hacer de la danza una experiencia envolvente. Podrás formar parte de clases temáticas, sesiones exclusivas y proyectos creativos.",
+    "description": "En Cuántica Studio llevamos el Chair Dance más allá de lo convencional, cada clase es el comienzo de algo extraordinario: Nuestro salón está diseñado para sumergirte en un ambiente donde la iluminación, la música y cada detalle del espacio se integran para hacer de la danza una experiencia envolvente.",
+    "secondaryDescription": "Además, podrás formar parte de clases temáticas, sesiones exclusivas y proyectos creativos que van más allá del salón, como producciones audiovisuales profesionales y grabaciones tanto dentro del estudio como en locaciones especiales.",
+    "pullQuote": "Creamos espacios y momentos para que explores tu movimiento, celebres tus avances y seas protagonista de tu propia historia.",
+    "highlights": [
+      { "phrase": "más allá de lo convencional", "color": "plum" },
+      { "phrase": "protagonista de tu propia historia", "color": "pink" }
+    ],
     "image": {
-      "url": "/disciplines/chair-dance.webp",
-      "alt": "Clase de Chair Dance en Cuántica Studio"
+      "url": "/disciplines/chair-dance-2.webp",
+      "alt": "Clase de Chair Dance en Cuántica Studio",
+      "fit": "cover"
     }
   },
   "benefits": {
-    "title": "Beneficios del Chair Dance",
+    "title": "Lo que vas a vivir en cada clase",
     "items": [
       {
-        "title": "Coordinación y Control",
-        "description": "Desarrolla coordinación corporal y aprende a integrar la silla como extensión de tu cuerpo.",
-        "icon": "coordination"
+        "title": "Coordinación y control",
+        "description": "Trabajarás la coordinación, el control corporal y la musicalidad al integrar distintos movimientos y figuras con la silla.",
+        "icon": "technique",
+        "highlights": [
+          { "phrase": "distintos movimientos y figuras con la silla", "color": "pink" }
+        ]
       },
       {
-        "title": "Expresión Escénica",
-        "description": "Aprende a interpretar coreografías combinando técnica, sensualidad y presencia escénica.",
-        "icon": "expression"
+        "title": "Expresión escénica",
+        "description": "Aprenderás a interpretar coreografías combinando técnica, sensualidad y presencia escénica, desarrollando tu propio estilo.",
+        "icon": "experience",
+        "highlights": [
+          { "phrase": "tu propio estilo", "color": "plum" }
+        ]
       },
       {
-        "title": "Confianza Personal",
-        "description": "Descubre una nueva faceta de ti misma mientras exploras tu movimiento.",
-        "icon": "confidence"
+        "title": "Confianza al bailar",
+        "description": "Cada clase es una oportunidad para reconocer tus avances, ganar confianza al bailar y descubrir una faceta diferente de ti.",
+        "icon": "confidence",
+        "highlights": [
+          { "phrase": "una faceta diferente de ti", "color": "pink" }
+        ]
       }
     ]
   },
   "audience": {
     "title": "¿Para quién va dirigida esta clase?",
     "description": "¡Esta clase es para ti si tienes curiosidad por aprender a bailar con la silla, descubrir nuevas formas de movimiento y explorar una faceta diferente de ti a través de la danza! No necesitas experiencia previa, solo ganas de aprender y disfrutar el proceso a tu propio ritmo.",
+    "highlights": [
+      { "phrase": "una faceta diferente de ti", "color": "plum" },
+      { "phrase": "a tu propio ritmo", "color": "pink" }
+    ],
+    "pullQuote": "No necesitas experiencia previa, solo ganas de aprender y disfrutar el proceso a tu propio ritmo.",
     "items": [
-      "Si tienes curiosidad por integrar la silla a tu danza",
-      "Si buscas una forma diferente de expresarte y conectarte contigo",
-      "Si quieres desarrollar coordinación y expresión escénica",
-      "Si deseas explorar tu sensualidad en un espacio seguro"
+      "Si tienes curiosidad por aprender a bailar con la silla",
+      "Si buscas descubrir nuevas formas de movimiento",
+      "Si quieres explorar una faceta diferente de ti a través de la danza",
+      "Si prefieres aprender sin experiencia previa, a tu propio ritmo"
     ]
   },
   "faqs": [
     {
       "question": "¿Puedo aprender Chair Dance si nunca lo he practicado?",
-      "answer": "Claro, ¡no necesitas experiencia previa para comenzar! En Cuántica Studio podrás familiarizarte con esta danza de manera progresiva, construyendo las habilidades necesarias para disfrutar de las coreografías a tu propio ritmo."
+      "answer": "¡Claro! No necesitas experiencia previa para comenzar. En Cuántica Studio podrás familiarizarte con esta danza de manera progresiva, construyendo las habilidades necesarias para disfrutar de las coreografías a tu propio ritmo."
     },
     {
       "question": "¿Qué puedo esperar al practicar Chair Dance?",
@@ -62,12 +85,16 @@
       "answer": "Te recomendamos ropa cómoda y flexible que te permita mover libremente, calcetines, tacones adecuados para practicar y agua para mantenerte hidratada."
     },
     {
-      "question": "¿Qué tan importante es la constancia?",
-      "answer": "La práctica constante te ayudará a familiarizarte con la silla, mejorar la coordinación de tus movimientos y aprender nuevas figuras y secuencias coreográficas. Cada clase representa una oportunidad para seguir desarrollando tus habilidades."
+      "question": "¿Qué tan importante es la constancia para aprender Chair Dance y mejorar mis movimientos?",
+      "answer": "La práctica constante te ayudará a familiarizarte con la silla, mejorar la coordinación de tus movimientos y aprender nuevas figuras y secuencias coreográficas. Cada clase representa una oportunidad para seguir desarrollando tus habilidades, reconocer tus avances y ganar confianza al bailar."
     },
     {
-      "question": "¿Qué habilidades necesito desarrollar?",
+      "question": "¿Qué habilidades necesito desarrollar para bailar Chair Dance?",
       "answer": "A lo largo de tus clases trabajarás la coordinación, el control corporal, la musicalidad y la expresión escénica, aprendiendo a integrar distintos movimientos y figuras con la silla."
+    },
+    {
+      "question": "¿Cómo puedo reservar?",
+      "answer": "Puedes reservar directamente desde nuestro sistema de reservas en línea. Si necesitas más información, también puedes contactarnos por WhatsApp al 722 670 9287 o por correo a ventas1@cuantica-studio.mx."
     }
   ]
 }

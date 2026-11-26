@@ -5,69 +5,100 @@
   "heroSection": {
     "title": "Heels Dance",
     "subtitle": "Empodérate a través del movimiento",
-    "description": "Heels Dance es una danza moderna que combina coreografía urbana, actitud y técnica en tacones, diseñada para que descubras una versión más segura y expresiva de ti misma. No necesitas experiencia previa en baile: aquí se trabaja el movimiento, la postura y la confianza paso a paso, en nuestras clases de Heels Dance en Toluca.",
-    "mainImage": "/disciplines/Heels-Dance.webp",
-    "ctaText": "¡Baila con nosotras!",
+    "description": "Heels Dance es un estilo de danza en tacones que combina técnica, sensualidad y expresión corporal. En Cuántica Studio, a través de coreografías y entrenamiento técnico, desarrollarás tu confianza, explorarás tu sensualidad y descubrirás nuevas formas de expresarte con libertad y seguridad.",
+    "tagline": "En Cuántica no solo vienes a bailar, vienes a vivir una experiencia que transforma.",
+    "mainImage": "/disciplines/heels-dance-2.webp",
+    "heroImageAspect": "aspect-[4/3] sm:aspect-[16/10]",
+    "ctaText": "Reserva tu clase",
     "ctaLink": "/#contacto"
   },
   "whyCuantica": {
     "title": "¿Por qué bailar Heels Dance en Cuántica Studio?",
-    "description": "En Cuántica Studio aprendes Heels Dance en un espacio seguro y sin juicios, pensado para que avances a tu ritmo sin importar si es tu primera clase de baile. Las coreografías se construyen por niveles, con corrección personalizada de técnica y postura, dentro de una comunidad que celebra cada avance, no solo el resultado final.",
+    "description": "En Cuántica Studio llevamos el Heels Dance más allá de lo convencional, cada clase es el comienzo de algo extraordinario: Nuestro salón está diseñado para sumergirte en un ambiente donde la iluminación, la música y cada detalle del espacio se integran para hacer de la danza una experiencia envolvente.",
+    "secondaryDescription": "Además, podrás formar parte de clases temáticas, sesiones exclusivas y proyectos creativos que van más allá del salón, como producciones audiovisuales profesionales y grabaciones tanto dentro del estudio como en locaciones especiales.",
+    "pullQuote": "Creamos espacios y momentos para que explores tu movimiento, celebres tus avances y seas protagonista de tu propia historia.",
+    "highlights": [
+      { "phrase": "más allá de lo convencional", "color": "plum" },
+      { "phrase": "experiencia envolvente", "color": "pink" },
+      { "phrase": "producciones audiovisuales profesionales", "color": "plum" },
+      { "phrase": "protagonista de tu propia historia", "color": "plum" }
+    ],
     "image": {
-      "url": "/disciplines/Heels-Dance.webp",
-      "alt": "Clase de Heels Dance en Cuántica Studio"
+      "url": "/disciplines/heels-dance-3.webp",
+      "alt": "Clase de Heels Dance en Cuántica Studio",
+      "fit": "cover"
     }
   },
   "benefits": {
-    "title": "Resultados que notarás bailando Heels Dance con nosotras",
+    "title": "Lo que vas a vivir en cada clase",
     "items": [
       {
-        "title": "Confianza y Expresión",
-        "description": "Descubre tu poder interior y tu autenticidad a través del baile, ganando seguridad frente al espejo y frente a los demás.",
-        "icon": "confidence"
+        "title": "Confianza y expresión",
+        "description": "Descubrirás de lo que eres capaz mientras aprendes coreografías, exploras tu sensualidad y ganas confianza para bailar con seguridad.",
+        "icon": "confidence",
+        "highlights": [
+          { "phrase": "Descubrirás de lo que eres capaz", "color": "plum" }
+        ]
       },
       {
-        "title": "Fuerza y Postura",
-        "description": "Mejora tu postura corporal y fortalece piernas, glúteos y core con coreografías desafiantes y progresivas.",
-        "icon": "posture"
+        "title": "Técnica y coordinación",
+        "description": "En Cuántica te acompañamos paso a paso para que desarrolles técnica, coordinación y seguridad al bailar, a tu propio ritmo.",
+        "icon": "technique",
+        "highlights": [
+          { "phrase": "paso a paso", "color": "pink" },
+          { "phrase": "a tu propio ritmo", "color": "plum" }
+        ]
       },
       {
-        "title": "Diversión y Comunidad",
-        "description": "Conecta con otras personas que aman moverse y disfrutar juntas, en un ambiente que te motiva a volver cada semana.",
-        "icon": "community"
+        "title": "Experiencia envolvente",
+        "description": "Cada clase es el comienzo de algo extraordinario: la iluminación, la música y cada detalle del espacio se integran para hacer de la danza una experiencia envolvente.",
+        "icon": "experience",
+        "highlights": [
+          { "phrase": "algo extraordinario", "color": "plum" },
+          { "phrase": "experiencia envolvente", "color": "pink" }
+        ]
       }
     ]
   },
   "audience": {
-    "title": "¿Para quién es Heels Dance en Cuántica Studio?",
-    "description": "Nuestras clases de Heels Dance en Toluca están pensadas para cualquier persona que quiera moverse con confianza, sin importar su nivel previo de baile.",
+    "title": "¿Para quién va dirigida esta clase?",
+    "description": "Heels Dance es para ti, incluso si nunca has bailado o usado tacones para bailar. No necesitas experiencia previa, solo ganas de aprender, explorar tu movimiento y descubrir nuevas posibilidades en la danza.",
+    "highlights": [
+      { "phrase": "incluso si nunca has bailado", "color": "plum" },
+      { "phrase": "descubrir nuevas posibilidades", "color": "plum" }
+    ],
+    "pullQuote": "En Cuántica te acompañamos paso a paso para que desarrolles técnica, coordinación y seguridad al bailar, a tu propio ritmo y en un espacio donde puedas experimentar, aprender y disfrutar cada movimiento.",
     "items": [
-      "Si quieres ganar confianza y soltura frente al espejo y en cualquier pista",
-      "Si buscas una forma divertida de fortalecer piernas, glúteos y postura",
-      "Si nunca has bailado en tacones y quieres aprender desde cero",
-      "Si buscas un grupo que te motive a seguir practicando cada semana"
+      "Si quieres descubrir una nueva forma de experimentar la danza",
+      "Si buscas desarrollar técnica, coordinación y seguridad al bailar",
+      "Si te interesa explorar tu sensualidad en un espacio sin juicios",
+      "Si prefieres aprender a tu propio ritmo y disfrutar el proceso"
     ]
   },
   "faqs": [
     {
-      "question": "¿Necesito experiencia previa en baile o en tacones?",
-      "answer": "No, la mayoría de nuestras alumnas empiezan sin experiencia. Trabajamos desde lo básico: postura, equilibrio y pasos sencillos antes de subir la dificultad."
+      "question": "¿Puedo aprender Heels Dance si nunca he bailado?",
+      "answer": "¡Claro! No necesitas experiencia previa. Puedes comenzar desde cero y aprender progresivamente los movimientos y las bases de la disciplina, respetando tu propio ritmo. Te acompañamos y guiamos en el proceso."
     },
     {
-      "question": "¿Qué tacones debo usar en clase?",
-      "answer": "Recomendamos un tacón cómodo de entre 7 y 9 cm con buen agarre; si aún no tienes uno, puedes empezar practicando con tenis y hacer la transición cuando te sientas lista."
+      "question": "¿Qué puedo esperar al practicar Heels Dance?",
+      "answer": "Descubrirás de lo que eres capaz mientras aprendes coreografías, exploras tu sensualidad y ganas confianza para bailar con seguridad, hasta verte, sentirte y reconocerte con orgullo en cada movimiento."
     },
     {
-      "question": "¿Con qué frecuencia debo tomar clase para ver avances?",
-      "answer": "Con 1-2 clases por semana notarás mejoras en tu equilibrio, fuerza y confianza en pocas semanas; la constancia es lo que más acelera el progreso."
+      "question": "¿Qué necesito llevar a mi primera clase?",
+      "answer": "Te recomendamos ropa cómoda y flexible que te permita mover libremente, tacones adecuados para practicar y agua para mantenerte hidratada."
     },
     {
-      "question": "¿Hay un límite de edad para tomar Heels Dance?",
-      "answer": "La clase está pensada principalmente para adultas jóvenes y adultas; si tienes dudas sobre si es adecuada para tu edad o condición física, contáctanos antes de inscribirte."
+      "question": "¿Qué tipo de tacones debo utilizar?",
+      "answer": "Es indispensable utilizar tacones diseñados específicamente para la danza, ya que ofrecen mayor estabilidad y soporte para ejecutar los movimientos de forma adecuada. Si aún no cuentas con ellos, puedes tomar tu clase en calcetines mientras tanto. También puedes acercarte a nuestro equipo; con gusto te orientaremos y te recomendaremos opciones adecuadas para comenzar."
     },
     {
-      "question": "¿En qué ciudad se imparten las clases?",
-      "answer": "Nuestro estudio está en Toluca y recibimos alumnas de Metepec, Zinacantepec y Lerma."
+      "question": "¿Necesito tener cierta edad o complexión física para practicar Heels Dance?",
+      "answer": "No hay una edad ni una complexión física específica para practicar y disfrutar de esta disciplina. Lo importante es tener ganas de aprender y avanzar a tu propio ritmo."
+    },
+    {
+      "question": "¿Cómo puedo reservar?",
+      "answer": "Puedes reservar directamente desde nuestro sistema de reservas en línea. Si necesitas más información, también puedes contactarnos por WhatsApp al 722 670 9287 o por correo a ventas1@cuantica-studio.mx."
     }
   ]
 }

@@ -4,48 +4,70 @@
   "slug": "floorwork",
   "heroSection": {
     "title": "Floorwork",
-    "subtitle": "Movimiento que fluye desde el suelo",
     "description": "El Floorwork es una disciplina de danza que explora el movimiento en el suelo mediante giros, transiciones y desplazamientos fluidos. En Cuántica Studio encontrarás un espacio para practicar esta disciplina, desarrollando fuerza, flexibilidad y control corporal a través de clases que integran técnica y expresión en cada movimiento.",
+    "descriptionHighlights": [
+      { "phrase": "movimiento en el suelo", "color": "plum" }
+    ],
     "mainImage": "/disciplines/floorwork.webp",
     "ctaText": "Reserva tu clase",
     "ctaLink": "/#contacto"
   },
   "whyCuantica": {
     "title": "¿Por qué practicar Floorwork en Cuántica Studio?",
-    "description": "En Cuántica Studio llevamos el Floorwork más allá de lo convencional. Nuestro salón está diseñado para sumergirte en un ambiente donde la iluminación, la música y cada detalle se integran para hacer de la danza una experiencia envolvente. Podrás formar parte de clases temáticas, sesiones exclusivas y proyectos creativos que van más allá del salón.",
+    "description": "En Cuántica Studio llevamos el Floorwork más allá de lo convencional, cada clase es el comienzo de algo extraordinario: Nuestro salón está diseñado para sumergirte en un ambiente donde la iluminación, la música y cada detalle del espacio se integran para hacer de la danza una experiencia envolvente.",
+    "secondaryDescription": "Además, podrás formar parte de clases temáticas, sesiones exclusivas y proyectos creativos que van más allá del salón, como producciones audiovisuales profesionales y grabaciones tanto dentro del estudio como en locaciones especiales.",
+    "pullQuote": "Creamos espacios y momentos para que explores tu movimiento, celebres tus avances y seas protagonista de tu propia historia.",
+    "highlights": [
+      { "phrase": "más allá de lo convencional", "color": "plum" },
+      { "phrase": "protagonista de tu propia historia", "color": "pink" }
+    ],
     "image": {
-      "url": "/disciplines/floorwork.webp",
+      "url": "/disciplines/floorwork-2.webp",
       "alt": "Clase de Floorwork en Cuántica Studio"
     }
   },
   "benefits": {
-    "title": "Beneficios del Floorwork",
+    "title": "Lo que vas a vivir en cada clase",
     "items": [
       {
-        "title": "Fuerza y Control",
-        "description": "Desarrolla fuerza funcional y control corporal mientras aprendes a moverte con fluidez en el suelo.",
-        "icon": "strength"
+        "title": "Técnica y control",
+        "description": "Trabajarás giros, desplazamientos y transiciones en el suelo para aprender a moverte con mayor fluidez, control y seguridad.",
+        "icon": "technique",
+        "highlights": [
+          { "phrase": "fluidez, control y seguridad", "color": "pink" }
+        ]
       },
       {
-        "title": "Flexibilidad Progresiva",
-        "description": "Gana movilidad articular y amplitud de movimiento a través de trabajo técnico específico.",
-        "icon": "flexibility"
+        "title": "Fuerza y flexibilidad",
+        "description": "Desarrollarás progresivamente las capacidades físicas que exige el Floorwork, trabajando desde tus posibilidades actuales a tu propio ritmo.",
+        "icon": "posture",
+        "highlights": [
+          { "phrase": "a tu propio ritmo", "color": "plum" }
+        ]
       },
       {
-        "title": "Expresión Artística",
-        "description": "Explora nuevas formas de expresión a través de secuencias coreográficas únicas.",
-        "icon": "expression"
+        "title": "Expresión personal",
+        "description": "Explorarás nuevas formas de expresión y descubrirás todo lo que tu cuerpo puede lograr sobre el suelo.",
+        "icon": "confidence",
+        "highlights": [
+          { "phrase": "nuevas formas de expresión", "color": "pink" }
+        ]
       }
     ]
   },
   "audience": {
     "title": "¿Para quién va dirigida esta clase?",
-    "description": "El Floorwork es para ti, ¡incluso si nunca lo has practicado! En Cuántica Studio te acompañamos a desarrollar fuerza, flexibilidad y control corporal mientras exploras nuevas formas de expresión.",
+    "description": "El Floorwork es para ti, ¡incluso si nunca lo has practicado! En Cuántica Studio te acompañamos a desarrollar fuerza, flexibilidad y control corporal mientras exploras nuevas formas de expresión. Atrévete a descubrir todo lo que tu cuerpo puede lograr y vive una nueva forma de experimentar la danza.",
+    "highlights": [
+      { "phrase": "incluso si nunca lo has practicado", "color": "plum" },
+      { "phrase": "nueva forma de experimentar la danza", "color": "pink" }
+    ],
+    "pullQuote": "Atrévete a descubrir todo lo que tu cuerpo puede lograr y vive una nueva forma de experimentar la danza.",
     "items": [
       "Si quieres descubrir una nueva forma de experimentar la danza",
       "Si buscas desarrollar fuerza, flexibilidad y control corporal",
-      "Si te interesa explorar movimientos en el suelo con fluidez",
-      "Si prefieres aprender a tu propio ritmo en un espacio sin juicio"
+      "Si te interesa explorar nuevas formas de expresión en movimiento",
+      "Si prefieres aprender a tu propio ritmo, incluso desde cero"
     ]
   },
   "faqs": [
@@ -66,8 +88,12 @@
       "answer": "No. Estas capacidades se desarrollan con la práctica. Comenzarás trabajando tus posibilidades actuales y progresarás gradualmente."
     },
     {
-      "question": "¿Cuánto tiempo necesito para aprender los movimientos básicos?",
-      "answer": "El tiempo de aprendizaje depende de tu ritmo y la constancia con la que practiques. En Cuántica Studio aprenderás progresivamente los fundamentos, desde las transiciones más sencillas hasta secuencias más complejas."
+      "question": "¿Cuánto tiempo necesito para aprender los movimientos básicos de Floorwork?",
+      "answer": "El tiempo de aprendizaje depende de tu ritmo y la constancia con la que practiques. En Cuántica Studio aprenderás progresivamente los fundamentos del Floorwork, desde las transiciones más sencillas hasta secuencias más complejas. ¡Lo importante es disfrutar el proceso y reconocer cada avance!"
+    },
+    {
+      "question": "¿Cómo puedo reservar?",
+      "answer": "Puedes reservar directamente desde nuestro sistema de reservas en línea. Si necesitas más información, también puedes contactarnos por WhatsApp al 722 670 9287 o por correo a ventas1@cuantica-studio.mx."
     }
   ]
 }
